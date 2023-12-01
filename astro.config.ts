@@ -8,6 +8,8 @@ import { SITE } from "./src/config";
 import { remarkReadingTime } from "./src/utils/remark-reading-time.mjs"; // make sure your relative path is correct
 import vercelStatic from "@astrojs/vercel/static";
 
+import partytown from "@astrojs/partytown";
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
@@ -17,6 +19,7 @@ export default defineConfig({
     }),
     react(),
     sitemap(),
+    partytown(),
   ],
   markdown: {
     remarkPlugins: [

@@ -78,11 +78,51 @@ const socialImageURL = new URL(
       )
     }
 
+    <meta
+      name="google-site-verification"
+      content="_FpQVgQ5zVW6rC2f8WwPIKKkrumWK55R455qLLDD35I"
+    />
+    <script type="text/partytown">
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-1106578431736357",
+        enable_page_level_ads: true,
+      });
+    </script>
+
     <ViewTransitions />
 
     <script is:inline src="/toggle-theme.js"></script>
   </head>
   <body>
     <slot />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      type="text/partytown"
+      src="https://www.googletagmanager.com/gtag/js?id=UA-42865594-7"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-42865594-7");
+    </script>
+    <script
+      type="text/partytown"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <ins
+      class="adsbygoogle"
+      style="display:block; text-align:center;"
+      data-ad-layout="in-article"
+      data-ad-format="fluid"
+      data-ad-client="ca-pub-1106578431736357"
+      data-ad-slot="9433231619"></ins>
+    <script type="text/partytown">
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   </body>
 </html>
