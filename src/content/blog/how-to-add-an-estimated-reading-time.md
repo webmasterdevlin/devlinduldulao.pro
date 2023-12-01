@@ -201,8 +201,8 @@ Files that use `getSortedPosts` function are as follow
 All you have to do is like this
 
 ```ts
-const sortedPosts = getSortedPosts(posts); // old code ❌
-const sortedPosts = await getSortedPosts(posts); // new code ✅
+const sortedPosts = await getSortedPosts(posts); // old code ❌
+const sortedPosts = asyncawait getSortedPosts(posts); // new code ✅
 ```
 
 Now you can access `readingTime` in other places besides `PostDetails`
