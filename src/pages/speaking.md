@@ -3,13 +3,13 @@ layout: ../layouts/AboutLayout.astro
 title: "Speaking"
 ---
 
-## PAST AND UPCOMING CONFERENCE TALKS
+## Past and upcoming conference talks
 
 ![feature image](https://devlinduldulao.pro/wp-content/uploads/2022/11/52492704938_68f1226a60_o.jpg)
 
-My Recorded Talks On YouTube Are [Here](https://www.youtube.com/watch?v=-jEbBkhaRSU&list=PLr5vRe322K_jgbd97facJBdX5GMsMMlaq)
+My recorded talks on YouTube are [here](https://www.youtube.com/watch?v=-jEbBkhaRSU&list=PLr5vRe322K_jgbd97facJBdX5GMsMMlaq)
 
-My Upcoming Talks
+## My Upcoming Talks
 
 Event: Update Prague Conference 2023<br>
 Date: November 2023<br>
@@ -383,21 +383,3 @@ Title: Progressive Web Apps, the future of web apps<br>
 BIO:
 
 Devlin Duldulao is a Filipino full-stack software and cloud engineer based in Norway. He is a Microsoft MVP, an Auth0 Ambassador, a trainer, a conference speaker, and a senior consultant at Inmeta. He loves going to universities and user groups to share his expertise.
-
-angular kurs oslo
-
-react kurs oslo
-
-vue kurs oslo
-
-asp.net core kurs oslo
-
-spring boot kurs oslo
-
-fastapi kurs oslo
-
-semantic kernel kurs oslo
-
-langchain kurs oslo
-
-webutvikling kurs oslo
