@@ -5,7 +5,7 @@ title: "Speaking"
 
 ## Past and upcoming conference talks
 
-![feature image](https://devlinduldulao.pro/wp-content/uploads/2022/11/52492704938_68f1226a60_o.jpg)
+![feature image](https://res.cloudinary.com/dtxpbduyz/image/upload/v1703516040/wszymcp48oq2jomkiaer.jpg)
 
 My recorded talks on YouTube are [here](https://www.youtube.com/watch?v=-jEbBkhaRSU&list=PLr5vRe322K_jgbd97facJBdX5GMsMMlaq)
 

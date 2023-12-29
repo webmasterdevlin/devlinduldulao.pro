@@ -10,9 +10,9 @@ export type SearchItem = {
   data: CollectionEntry<"blog">["data"];
 };
 
-interface Props {
+type Props = {
   searchList: SearchItem[];
-}
+};
 
 interface SearchResult {
   item: SearchItem;

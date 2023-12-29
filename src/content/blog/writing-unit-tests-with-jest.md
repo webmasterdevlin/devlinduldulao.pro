@@ -16,7 +16,7 @@ In the realm of software development, unit tests are indispensable tools that en
 
 In this blog post, we'll delve into how to write robust unit tests using Jest.
 
-## 1. SETTING UP JEST
+## 1. Setting up Jest
 
 Before we can start writing tests, we need to set up Jest. Jest is a Node-based runner, meaning it runs tests in a Node environment rather than a real browser. To install Jest, you will need to have Node.js installed on your machine. Once you have Node.js installed, navigate to your project directory and run:
 
@@ -26,7 +26,7 @@ npm install --save-dev jest
 
 This installs Jest as a devDependency, which means it will only be used in a development environment.
 
-## 2. WRITING YOUR FIRST JEST TEST
+## 2. Writing your first Jest test
 
 The most basic test in Jest is an equality check, which is performed with the expect function. A basic test might look something like this:
 
@@ -38,7 +38,7 @@ test("adds 1 + 2 to equal 3", () => {
 
 In this example, expect(1 + 2).toBe(3); is the test assertion, and the string 'adds 1 + 2 to equal 3' is the test name.
 
-## 3. USING MATCHERS
+## 3. Using matchers
 
 Jest comes with an extensive library of "matchers" that let you validate different things. In the example above, we used toBe, which checks exact equality. Here are a few more examples:
 
@@ -58,7 +58,7 @@ test("object assignment", () => {
 });
 ```
 
-## 4. TESTING ASYNCHRONOUS CODE
+## 4. Testing asynchronous code
 
 Jest provides several ways to handle testing asynchronous code. One of the most common ways is to use async/await:
 
@@ -69,7 +69,7 @@ test("the data is peanut butter", async () => {
 });
 ```
 
-## 5. ORGANIZING TESTS
+## 5. Organizing tests
 
 To keep your test suite organized, Jest provides the describe function to group-related tests:
 
@@ -84,7 +84,7 @@ describe("my beverage", () => {
 });
 ```
 
-## 6. SETUP AND TEARDOWN
+## 6. Setup and teardown
 
 In some cases, we need to perform setup steps before tests run or cleanup steps afterwards. Jest provides several helper functions to handle this:
 
@@ -109,7 +109,7 @@ describe("connecting to the database", () => {
 });
 ```
 
-## 7. MOCKING
+## 7. Mocking
 
 Jest also provides a powerful mocking system that allows you to mock everything from simple functions to entire modules. This is an essential part of unit testing, as it allows you to isolate the code you're testing.
 

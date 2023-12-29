@@ -15,7 +15,7 @@ description: JavaScript, the lingua franca of the web, has long shed its reputat
 
 JavaScript, the lingua franca of the web, has long shed its reputation as a rudimentary scripting language. Today, it's ubiquitous across web, mobile, and server-side development, powering some of the most complex applications. One of the critical aspects of JavaScript development is the implementation of design patterns, which are reusable solutions to common software design problems. Let's explore some of these essential design patterns that can help you craft efficient and maintainable JavaScript applications.
 
-### 1. MODULE PATTERN
+### 1. Module pattern
 
 One of the most commonly used design patterns in JavaScript is the Module pattern. It provides a way of encapsulating private variables and functions, allowing developers to create public methods that interact with them. This pattern is useful for avoiding global scope pollution and maintaining a clean, well-structured codebase.
 
@@ -39,7 +39,7 @@ const myModule = (() => {
 myModule.publicFunction(); // Access public method and variable.
 ```
 
-### 2. REVEALING MODULE PATTERN
+### 2. Revealing module pattern
 
 The Revealing Module pattern is a spin-off of the Module pattern, providing a clearer syntax and a more consistent and readable structure. The main idea is to return an object literal at the end of a module that reveals private functions and variables that should be accessible from outside the module.
 
@@ -64,7 +64,7 @@ const myRevealingModule = (() => {
 myRevealingModule.start(); // Executes private function via public method.
 ```
 
-## 3. SINGLETON PATTERN
+### 3. Singleton pattern
 
 The Singleton pattern restricts a class from instantiating multiple objects. This pattern is often used where a single shared resource, like a database connection or a logging service, is required across the application.
 
@@ -91,7 +91,7 @@ let instance2 = Singleton.getInstance();
 console.log(instance1 === instance2); // returns true, both instances are the same.
 ```
 
-## 4. OBSERVER PATTERN
+### 4. Observer pattern
 
 The Observer pattern offers a subscription model where objects (known as observers) can subscribe to an event and get notified when this event occurs. This pattern is widely used in modern web development, particularly in event handling and in libraries and frameworks.
 
@@ -132,7 +132,7 @@ subject.subscribe(observer2);
 subject.fire(); // Logs "Observer 1 Firing!" and "Observer 2 Firing!"
 ```
 
-## 5. FACTORY PATTERN
+### 5. Factory pattern
 
 The Factory pattern is used to create objects without exposing the object creation logic to the client and refer to the newly created object using a common interface. It's beneficial when the object setup is complex or when we want to keep track of the number of objects created.
 

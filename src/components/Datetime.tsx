@@ -1,18 +1,13 @@
 import { LOCALE } from "@config";
 
-export interface Props {
+type Props = {
   datetime: string | Date;
   size?: "sm" | "lg";
   className?: string;
   readingTime?: string;
-}
+};
 
-export default function Datetime({
-  datetime,
-  size = "sm",
-  className,
-  readingTime,
-}: Props) {
+const Datetime = ({ datetime, size = "sm", className, readingTime }: Props) => {
   return (
     <div className={`flex items-center space-x-2 opacity-80 ${className}`}>
       <svg
@@ -32,8 +27,9 @@ export default function Datetime({
       </span>
     </div>
   );
-}
+};
 
+export default Datetime;
 const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
   const myDatetime = new Date(datetime);
 

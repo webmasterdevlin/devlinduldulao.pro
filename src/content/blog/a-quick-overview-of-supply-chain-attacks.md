@@ -16,11 +16,11 @@ Supply chain attacks have risen recently, causing significant concern among busi
 
 ![feature image](https://devlinduldulao.pro/wp-content/uploads/2023/03/supply-chain-attacks.png)
 
-## UNDERSTANDING SUPPLY CHAIN ATTACKS
+## Understanding Supply Chain Attacks
 
 Supply chain attacks involve infiltrating a network by exploiting vulnerabilities in third-party software, hardware, or services. They differ from direct attacks, where hackers target a specific organization. In a supply chain attack, cybercriminals focus on less secure elements of the supply chain, eventually gaining access to the intended target.
 
-## COMMON METHODS OF ATTACK
+## Common Methods of Attack
 
 1. Compromised Software Updates: One of the most common methods is compromising software updates from legitimate vendors. Hackers can infiltrate networks and gain access to sensitive data by injecting malicious code into a trusted software update.
 
@@ -30,7 +30,7 @@ Supply chain attacks involve infiltrating a network by exploiting vulnerabilitie
 
 4. Insider Threats: Disgruntled employees or those with malicious intent can intentionally introduce security flaws into a supply chain. Hackers can then exploit these vulnerabilities to infiltrate the targeted organization.
 
-## CONCLUSION
+## Conclusion
 
 As global economies become increasingly interconnected, supply chain attacks pose a growing threat to businesses and organizations. By exploiting vulnerabilities in the complex web of relationships that make up a typical supply chain, cybercriminals can gain access to sensitive data and systems, causing significant damage. To mitigate the risks associated with supply chain attacks, organizations must adopt a comprehensive security strategy that includes assessing the security posture of their vendors and implementing robust security measures throughout the supply chain. This approach will help identify and address potential vulnerabilities, minimizing the risk of successful attacks.
 

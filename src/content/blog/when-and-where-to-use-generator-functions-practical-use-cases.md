@@ -15,7 +15,7 @@ description: Now that we've explored the mechanics of generator functions, it's 
 
 Now that we've explored the mechanics of generator functions, it's essential to understand where they can be utilized best. Despite their power, they are not a one-size-fits-all solution. But, for certain scenarios, they are indeed a game-changer. Let's dive into some practical use cases of generator functions.
 
-## HANDLING LARGE DATA SETS
+## Handling large data sets
 
 One of the most common use cases for generator functions is when working with large datasets you don't want to hold in memory all at once. For example, if you need to process a massive array of data, instead of loading the entire array into memory, you can use a generator to yield each item one at a time.
 
@@ -38,7 +38,7 @@ while (!currentItem.done) {
 
 In this example, the dataGenerator function yields each item from the array one at a time, significantly reducing memory usage.
 
-## MANAGING ASYNCHRONOUS FLOW
+## Managing asynchronous flow
 
 As we mentioned earlier, generators can be handy for handling asynchronous operations. With generators, we can write asynchronous code that looks synchronous, thus improving code readability and maintainability.
 
@@ -63,7 +63,7 @@ generator
 
 In this example, fetchSequentialData fetches user data, waits for it to resolve, and then fetches post data for the first user. This process occurs sequentially without deeply nesting the code.
 
-## INFINITE DATA STRUCTURES
+## Infinite data structures
 
 Generators are also great for creating infinite data structures. Suppose you're creating a game and need an endless supply of enemy characters. You could use a generator function to create enemies as you need them without any predefined limit.
 

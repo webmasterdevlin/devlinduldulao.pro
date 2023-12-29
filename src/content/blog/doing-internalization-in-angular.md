@@ -18,7 +18,7 @@ Angular, a popular web application framework developed by Google, offers excelle
 
 Let's dive into the steps of how you can internalize your Angular application:
 
-## STEP 1: INSTALL ANGULAR'S I18N LIBRARY
+## Step 1: Install Angular's i18n Library
 
 Firstly, you need to add the i18n library to your Angular project. Navigate to the root directory of your Angular project via the command line and run the following command:
 
@@ -28,7 +28,7 @@ ng add @angular/localize
 
 This command will install the necessary packages required for internalization.
 
-## STEP 2: MARK CONTENT FOR TRANSLATIONS
+## Step 2: Mark Content for translations
 
 Next, you will need to mark the content in your application that needs to be translated. Angular provides a special i18n attribute for this purpose. Here is an example of marking a simple greeting message for translation:
 
@@ -44,7 +44,7 @@ You can also add descriptions and custom ids to your translations to provide mor
 </h1>
 ```
 
-## STEP 3: EXTRACT I18N MESSAGES
+## Step 3: Extract i18n messages
 
 Once you've marked all the content for translation, you'll need to extract it into a translation source file. Angular CLI provides a command to perform this operation:
 
@@ -54,7 +54,7 @@ ng xi18n --output-path locale
 
 This command will generate a messages.xlf file in a new locale folder. This file contains all the text in your application that has been marked for translation.
 
-## STEP 4: TRANSLATE THE TEXT
+## Step 4: Translate the text
 
 Now, it's time to translate the extracted messages. Open the messages.xlf file and add a <target> element under each <source> element with the translated text. Here's an example for translating English text to Spanish:
 
@@ -67,7 +67,7 @@ Now, it's time to translate the extracted messages. Open the messages.xlf file a
 
 For multiple languages, you should duplicate the messages.xlf file and rename each one to include the locale identifier (e.g., messages.es.xlf for Spanish).
 
-## STEP 5: CONFIGURE ANGULAR TO USE TRANSLATIONS
+## Step 5: Configure Angular to use translations
 
 Once your translations are ready, you need to instruct Angular to use them. This can be achieved by adjusting the Angular compiler's configuration.
 
@@ -100,7 +100,7 @@ Then, you can build your app using:
 ng build --configuration=production,es
 ```
 
-## STEP 6: SERVE YOUR TRANSLATED APP
+## Step 6: Serve your translated app
 
 With your application built for the desired locale, you can now serve it to your users. Remember that you have separate builds for different languages, so you must serve the right one based on the user's locale.
 

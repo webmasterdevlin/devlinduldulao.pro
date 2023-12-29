@@ -1,23 +1,24 @@
+/** @type {import("eslint").Linter.Config} */
 module.exports = {
-  env: {
-    node: true,
-    es2022: true,
-    browser: true,
-  },
-  extends: ["eslint:recommended", "plugin:astro/recommended"],
+  extends: ['plugin:astro/recommended'],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
+    tsconfigRootDir: __dirname,
+    sourceType: 'module',
+    ecmaVersion: 'latest'
   },
   overrides: [
     {
-      files: ["*.astro"],
-      parser: "astro-eslint-parser",
+      files: ['*.astro'],
+      parser: 'astro-eslint-parser',
       parserOptions: {
-        parser: "@typescript-eslint/parser",
-        extraFileExtensions: [".astro"],
+        parser: '@typescript-eslint/parser',
+        extraFileExtensions: ['.astro', '.tsx', '.ts', '.jsx', '.js']
       },
-      rules: {},
-    },
-  ],
-};
+      rules: {
+        // override/add rules settings here, such as:
+        // "astro/no-set-html-directive": "error"
+      }
+    }
+  ]
+}

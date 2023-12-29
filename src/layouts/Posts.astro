@@ -9,11 +9,11 @@ import LinkButton from "@components/LinkButton.astro";
 import slugify from "@utils/slugify";
 import type { CollectionEntry } from "astro:content";
 
-export interface Props {
+export type Props = {
   pageNum: number;
   totalPages: number;
   posts: CollectionEntry<"blog">[];
-}
+};
 
 const { pageNum, totalPages, posts } = Astro.props;
 

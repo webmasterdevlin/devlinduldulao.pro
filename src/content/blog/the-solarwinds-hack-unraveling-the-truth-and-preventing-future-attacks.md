@@ -16,7 +16,7 @@ In December 2020, the world witnessed one of the most sophisticated cyberattacks
 
 The SolarWinds attack began when hackers compromised the software company's update server to distribute malicious code through its popular network monitoring tool, Orion. By masquerading as a legitimate software update, the perpetrators gained unauthorized access to the networks of thousands of organizations, including high-profile government agencies and corporations. The attack was attributed to a Russian state-sponsored group called APT29, or Cozy Bear.
 
-![Not real photo of the suspected hackers](https://devlinduldulao.pro/wp-content/uploads/2023/03/hackers-solarwinds.png)
+![Not real photo of the suspected hackers](https://res.cloudinary.com/dtxpbduyz/image/upload/v1703516037/swchnq8lzknvginbbtpz.png)
 
 Several factors enabled the success of the SolarWinds hack. First, the attackers exploited the trust placed in the software supply chain. By compromising a widely-used product, they were able to infiltrate numerous organizations at once. Second, the sophistication of the malware and its ability to remain undetected for months allowed the attackers to gather vast amounts of sensitive information.
 

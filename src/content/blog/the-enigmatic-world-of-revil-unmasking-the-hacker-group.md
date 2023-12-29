@@ -18,7 +18,7 @@ REvil, also known as Sodinokibi, came to prominence through a series of high-pro
 
 The group's modus operandi is simple yet highly effective: infiltrate a target's systems, encrypt sensitive data, and demand a ransom in exchange for the decryption keys. REvil is infamous for its aggressive tactics, often using "double extortion" to pressure victims into paying up. This method involves encrypting the victim's data and threatening to leak sensitive information if their demands aren't met.
 
-![not real photo of revil hacker group](https://devlinduldulao.pro/wp-content/uploads/2023/03/revil-hacker-group.png)
+![not real photo of revil hacker group](https://res.cloudinary.com/dtxpbduyz/image/upload/v1703516035/wi9hbk75yvfdxqvsjnft.png)
 
 One of REvil's most notable attacks occurred in 2021 when they targeted Kaseya, an IT management software provider. This attack resulted in the encryption of over 1,000 businesses and organizations across the globe, causing widespread disruption and significant financial losses. REvil demanded a staggering $70 million in Bitcoin to provide a universal decryption key, highlighting their audacious and ruthless approach to cybercrime.
 

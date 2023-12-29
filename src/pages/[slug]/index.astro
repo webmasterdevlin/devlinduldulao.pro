@@ -8,13 +8,13 @@ import slugify from "@utils/slugify";
 import { SITE } from "@config";
 import getPostsWithRT from "@utils/getPostsWithRT";
 
-export interface Props {
+export type Props = {
   post: CollectionEntry<"blog">;
-}
+};
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog", ({ data }) => !data.draft);
-  
+
   const postsWithRT = await getPostsWithRT(posts); // replace reading time logic with this func
 
   const postResult = postsWithRT.map(post => ({

@@ -18,13 +18,13 @@ State management is an indispensable aspect of any web application. Proper state
 
 Github repository [link : ](https://github.com/webmasterdevlin/modern-angular-course-2023) This github sample repo shows how to do state management in Angular using signals with localstorage implementation.
 
-## A BRIEF INTRODUCTION TO ANGULAR SIGNALS
+## A brief introduction to Angular Signals
 
 Angular Signals is a tracking system that monitors your application's state usage and optimizes rendering updates accordingly. It essentially wraps around a value and signals all the interested parts of your application whenever there's a change in that value.
 
 Signals can track and update complex data structures, as shown below:
 
-## LOCALSTORAGE: PERSISTENT STATE MANAGEMENT
+## LocalStorage: Persistent State Management
 
 LocalStorage is a web storage object that allows you to store key-value pairs in a web browser. This makes it perfect for persisting non-sensitive data like user preferences or tokens across different browsing sessions.
 
@@ -38,11 +38,11 @@ import { AppComponent } from "./app/app.component";
 bootstrapApplication(AppComponent, appConfig).catch(err => console.error(err));
 ```
 
-## THE STORE FOLDER: ORGANIZING GLOBAL STATE
+## The store folder: organizing global state
 
 The 'store' folder is typically used in Angular applications to manage global state. It usually contains the global state of the application and houses state management related entities like actions, getters, and effects for various modules in the application.
 
-### ACTIONS.TS
+### actions.ts
 
 The 'actions.ts' file defines actions representing how we could change our state. Actions describe what happened but don't specify how the application's state changes in response. They are payloads of information that send data from your application to your store.
 
@@ -144,7 +144,7 @@ export class Actions {
 }
 ```
 
-### GETTERS.TS
+### getters.ts
 
 The 'getters.ts' file contains functions that allow you to compute the derived state based on the store state and expose it to components. It's similar to computed properties in Vue, enabling you to create functions that return some state data to components.
 
@@ -166,7 +166,7 @@ export class Getters {
 }
 ```
 
-### STATE.TS
+### state.ts
 
 The 'state.ts' file holds the application's or module's initial state. This state is updated by the actions described in 'actions.ts' using the methods described in 'getters.ts'.
 
@@ -205,7 +205,7 @@ const initialStoreState: StoreType = {
 };
 ```
 
-### INDEX.TS
+### index.ts
 
 The 'index.ts' file typically acts as a centralized public API for the store directory, exporting all the necessary actions, getters, and state properties that the components in your Angular application will use.
 
@@ -215,6 +215,6 @@ export * from "./actions";
 export * from "./getters";
 ```
 
-## FINAL THOUGHTS
+## Final thoughts
 
 In conclusion, combining Angular Signals and LocalStorage creates a robust and efficient global state management system. The 'store' folder plays a crucial role in this setup, housing all the relevant files that handle actions, mutations, getters, and the state itself. This structure helps isolate and manage the state of individual features of the application, making it easier to test and understand the state at any time. It's a testament to the flexibility and power that Angular provides to front-end developers, making it easier than ever to build complex, state-driven applications.

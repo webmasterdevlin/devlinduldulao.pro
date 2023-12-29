@@ -14,11 +14,11 @@ description: The Bangladesh Bank heist in February 2016 was one of the most infa
 
 The Bangladesh Bank heist in February 2016 was one of the most infamous cybercrimes in history. Criminals attempted to steal nearly $1 billion from the central bank of Bangladesh, successfully making off with $81 million. While this event sent shockwaves across the global financial system, it also serves as a stark reminder of the importance of strong cybersecurity measures. In this blog post, we'll explore the details of the heist and discuss ways to prevent such incidents in the future.
 
-## THE HEIST:
+## The heist:
 
 The Bangladesh Bank heist was orchestrated by a group of hackers who infiltrated the bank's computer network and gained access to the Society for Worldwide Interbank Financial Telecommunication (SWIFT) system. This allowed them to send fraudulent messages requesting the transfer of large sums of money from Bangladesh Bank's account at the Federal Reserve Bank of New York to accounts in the Philippines and Sri Lanka. The heist was partially foiled due to a simple typo in one of the transfer requests, which alerted authorities and prevented the full sum from being stolen.
 
-## LESSONS LEARNED:
+## Lessons learned:
 
 The Bangladesh Bank heist highlighted the vulnerabilities of the global financial system and emphasized the need for robust cybersecurity measures. To prevent similar incidents, organizations should consider the following strategies:
 
@@ -32,7 +32,7 @@ The Bangladesh Bank heist highlighted the vulnerabilities of the global financia
 
 5. Collaborate with other organizations and authorities: Sharing information about potential threats, vulnerabilities, and best practices can help organizations stay ahead of cybercriminals. Building relationships with law enforcement agencies and participating in industry-specific cybersecurity groups can also be beneficial.
 
-## CONCLUSION:
+## Conclusion
 
 The Bangladesh Bank heist serves as a cautionary tale for organizations worldwide. By implementing strong cybersecurity measures, regularly assessing vulnerabilities, and fostering collaboration among various stakeholders, organizations can minimize the risk of falling victim to similar attacks. The importance of robust cybersecurity practices cannot be overstated in today's interconnected world. As cybercriminals grow more sophisticated, organizations must remain vigilant and proactive in their efforts to protect their networks, systems, and sensitive data.
 
