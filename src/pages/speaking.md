@@ -1,13 +1,13 @@
 ---
-layout: ../layouts/AboutLayout.astro
+layout: ../layouts/SpeakingLayout.astro
 title: "Speaking"
 ---
 
-## Past and upcoming conference talks
+Past and upcoming conference talks.
 
 ![feature image](https://res.cloudinary.com/dtxpbduyz/image/upload/v1703516040/wszymcp48oq2jomkiaer.jpg)
 
-My recorded talks on YouTube are [here](https://www.youtube.com/watch?v=-jEbBkhaRSU&list=PLr5vRe322K_jgbd97facJBdX5GMsMMlaq)
+My recorded talks on YouTube are [here](https://www.youtube.com/watch?v=-jEbBkhaRSU&list=PLr5vRe322K_jgbd97facJBdX5GMsMMlaq).
 
 ## My Upcoming Talks
 
@@ -53,10 +53,10 @@ Location: Zadar, Croatia<br>
 Title: RsPack and TurboPack<br>
 [https://shift.infobip.com](https://shift.infobip.com)
 
-Event: Azure Fest
-Date: September 2023
-Location: Nieuwegein, Netherlands
-Title: Building AI-First Apps with Semantic Kernel: The Future of Software Development
+Event: Azure Fest<br>
+Date: September 2023<br>
+Location: Nieuwegein, Netherlands<br>
+Title: Building AI-First Apps with Semantic Kernel: The Future of Software Development<br>
 [https://www.azurefest.nl](https://www.azurefest.nl)
 
 Event: .NET Day Switzerland<br>
@@ -379,7 +379,3 @@ Date: September 8, 2018<br>
 Location: Makati, Philippines<br>
 Title: Progressive Web Apps, the future of web apps<br>
 [https://2018.manila.wordcamp.org/speaker/devlin-duldulao/](https://2018.manila.wordcamp.org/speaker/devlin-duldulao/)
-
-BIO:
-
-Devlin Duldulao is a Filipino full-stack software and cloud engineer based in Norway. He is a Microsoft MVP, an Auth0 Ambassador, a trainer, a conference speaker, and a senior consultant at Inmeta. He loves going to universities and user groups to share his expertise.
