@@ -11,7 +11,7 @@ My daily job is to collaborate in enterprise cloud, web, and mobile development.
 
 Microsoft MVP | Full-Stack Cloud Engineer | Book Author | Trainer | International Conference Speaker | Austronesian
 
-<div class="flex gap-10 justify-center items-center">
+<div class="flex flex-wrap gap-2 justify-center items-center">
 <a href="https://mvp.microsoft.com/en-us/PublicProfile/5003171"><img class="aligncenter" src="https://web.archive.org/web/20190124165953im_/https://devlinduldulao.pro//wp-content/uploads/2018/08/mvp-devlinduldulao.png" width="300"  /></a>
 
 <a href="https://www.youracclaim.com/users/devlin-duldulao/badges"><img class="aligncenter" src="https://web.archive.org/web/20190124165953im_/https://devlinduldulao.pro//wp-content/uploads/2017/11/MCT.png" width="300" /></a>
@@ -20,7 +20,7 @@ Microsoft MVP | Full-Stack Cloud Engineer | Book Author | Trainer | Internationa
 
 Here are my books. You can order now!
 
-<div class="flex gap-10 justify-center items-center">
+<div class="flex flex-wrap gap-2 justify-center items-center">
 <a href="https://www.amazon.com/ASP-NET-Core-Vue-js-Full-stack-applications/dp/1800206690/"><img src="https://images-na.ssl-images-amazon.com/images/I/61wp0T-xQfS.jpg" alt="ASP.NET Core 5 and Vuejs 3 book" width="240" /></a>
 
 <a href="https://www.amazon.com/Practical-Enterprise-React-Effective-Developer/dp/1484269748/"><img src="https://images-na.ssl-images-amazon.com/images/I/417whKwLgxL.jpg" alt="Practical Enterprise React" width="240"  /></a>
