@@ -3,7 +3,7 @@ author: webmasterdevlin
 pubDatetime: 2023-05-13T00:00:00Z
 title: The SolarWinds Hack - Unraveling the Truth and Preventing Future Attacks
 postSlug: the-solarwinds-hack-unraveling-the-truth-and-preventing-future-attacks
-featured: false
+featured: true
 draft: false
 tags:
   - security

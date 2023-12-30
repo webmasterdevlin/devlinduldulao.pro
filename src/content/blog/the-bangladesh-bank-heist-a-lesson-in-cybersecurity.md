@@ -3,7 +3,7 @@ author: webmasterdevlin
 pubDatetime: 2023-07-01T00:00:00Z
 title: The Bangladesh Bank Heist - A Lesson in Cybersecurity
 postSlug: the-bangladesh-bank-heist-a-lesson-in-cybersecurity
-featured: false
+featured: true
 draft: false
 tags:
   - security

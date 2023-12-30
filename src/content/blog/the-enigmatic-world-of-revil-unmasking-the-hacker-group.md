@@ -3,7 +3,7 @@ author: webmasterdevlin
 pubDatetime: 2023-06-13T00:00:00Z
 title: The Enigmatic World of REvil - Unmasking the Hacker Group
 postSlug: the-enigmatic-world-of-revil-unmasking-the-hacker-group
-featured: false
+featured: true
 draft: false
 tags:
   - security
