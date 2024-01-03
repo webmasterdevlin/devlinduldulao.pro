@@ -16,6 +16,7 @@
   },
   "include": [
     "src/**/*", // Include all files in the src folder
-    "globals.d.ts" // Include your custom global declarations
+    "src/globals.d.ts", // Include your custom global declarations,
+    "src/declarations.d.ts" // Include your custom global declarations,
   ]
 }

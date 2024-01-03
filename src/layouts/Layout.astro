@@ -3,8 +3,6 @@ import { SITE } from "@config";
 import "@styles/base.css";
 import { ViewTransitions } from "astro:transitions";
 
-const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
-
 export type Props = {
   title?: string;
   author?: string;
@@ -80,19 +78,14 @@ const socialImageURL = new URL(
       name="google-site-verification"
       content="_FpQVgQ5zVW6rC2f8WwPIKKkrumWK55R455qLLDD35I"
     />
-    <script type="text/partytown">
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-1106578431736357",
-        enable_page_level_ads: true,
-      });
-    </script>
 
     <ViewTransitions />
 
     <script is:inline src="/toggle-theme.js"></script>
   </head>
   <body>
-    <div align="center">
+    <!-- center a div using flex -->
+    <div class="flex justify-center">
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script
         async
