@@ -90,39 +90,47 @@ const socialImageURL = new URL(
     <ViewTransitions />
 
     <script is:inline src="/toggle-theme.js"></script>
-  </head>
-  <body>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      type="text/partytown"
-      src="https://www.googletagmanager.com/gtag/js?id=UA-42865594-7"></script>
-    <script type="text/partytown">
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-42865594-7");
-    </script>
-
     <script
       type="text/partytown"
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1106578431736357"
       crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div align="center">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script
+        async
+        type="text/partytown"
+        src="https://www.googletagmanager.com/gtag/js?id=UA-42865594-7"
+      ></script>
+      <script type="text/partytown">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-    <ins
-      class="adsbygoogle"
-      style="display:block; text-align:center;"
-      data-ad-layout="in-article"
-      data-ad-format="fluid"
-      data-ad-client="ca-pub-1106578431736357"
-      data-ad-slot="9433231619"></ins>
-    <script type="text/partytown">
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+        gtag("config", "UA-42865594-7");
+      </script>
+
+      <script
+        type="text/partytown"
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1106578431736357"
+        crossorigin="anonymous"></script>
+
+      <ins
+        class="adsbygoogle"
+        style="display:block; text-align:center;"
+        data-ad-layout="in-article"
+        data-ad-format="fluid"
+        data-ad-client="ca-pub-1106578431736357"
+        data-ad-slot="9433231619"></ins>
+      <script type="text/partytown">
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
     <slot />
   </body>
 </html>
