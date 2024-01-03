@@ -46,7 +46,7 @@ const socialImageURL = new URL(
     <meta name="title" content={title} />
     <meta name="description" content={description} />
     <meta name="author" content={author} />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="sitemap" href="/sitemap-0.xml" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content={title} />
@@ -69,28 +69,13 @@ const socialImageURL = new URL(
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Allura"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
       rel="stylesheet"
     />
 
     <meta name="theme-color" content="" />
 
-    {
-      // If PUBLIC_GOOGLE_SITE_VERIFICATION is set in the environment variable,
-      // include google-site-verification tag in the heading
-      // Learn more: https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag
-      googleSiteVerification && (
-        <meta
-          name="google-site-verification"
-          content={googleSiteVerification}
-        />
-      )
-    }
-
+    <!-- Google Search Console -->
     <meta
       name="google-site-verification"
       content="_FpQVgQ5zVW6rC2f8WwPIKKkrumWK55R455qLLDD35I"
@@ -107,7 +92,6 @@ const socialImageURL = new URL(
     <script is:inline src="/toggle-theme.js"></script>
   </head>
   <body>
-    <slot />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -137,5 +121,6 @@ const socialImageURL = new URL(
     <script type="text/partytown">
       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+    <slot />
   </body>
 </html>
