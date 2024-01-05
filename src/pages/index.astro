@@ -4,11 +4,9 @@ import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
-import Posts from "@layouts/Posts.astro";
 import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
 import getSortedPosts from "@utils/getSortedPosts";
-import getPageNumbers from "@utils/getPageNumbers";
 import Socials from "@components/Socials.astro";
 import { SOCIALS } from "@config";
 import { getCollection } from "astro:content";
@@ -17,17 +15,15 @@ const posts = await getCollection("blog");
 
 const sortedPosts = await getSortedPosts(posts);
 
-const totalPages = getPageNumbers(sortedPosts.length);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const socialCount = SOCIALS.filter(social => social.active).length;
-const paginatedPosts = sortedPosts.slice(0, SITE.postPerPage);
 ---
 
 <Layout>
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1 class="mr-2">cloud engineer blog</h1>
+      <h1 class="mr-2">web development and cybersecurity</h1>
       <a
         target="_blank"
         href="/rss.xml"
