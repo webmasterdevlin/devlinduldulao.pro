@@ -1,0 +1,47 @@
+---
+import { SITE } from "@config";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import talks from "@content/talks";
+import TalkCard from "@components/TalkCard";
+---
+
+<Layout title={`Speaking | ${SITE.title}`}>
+  <Header activeNav="speaking" />
+  <Breadcrumbs />
+  <main id="main-content">
+    <section id="speaking" class="prose mb-28 max-w-3xl prose-img:border-0">
+      <h1 class="text-2xl tracking-wider sm:text-3xl">Speaking</h1>
+      <p>
+        Past and upcoming conference talks.
+        <img
+          src="https://res.cloudinary.com/dtxpbduyz/image/upload/v1703516040/wszymcp48oq2jomkiaer.jpg"
+          alt="Me speaking at a conference"
+          class="mb-8 mt-4 h-auto w-full"
+        />
+        My recorded talks on YouTube are
+        <a
+          href="https://www.youtube.com/watch?v=-jEbBkhaRSU&list=PLr5vRe322K_jgbd97facJBdX5GMsMMlaq"
+          >here</a
+        >.
+      </p>
+      <h2>My Upcoming Talks</h2>
+      {
+        talks.map(talk => {
+          return (
+            <TalkCard
+              event={talk.Event}
+              date={talk.Date}
+              location={talk.Location}
+              title={talk.Title}
+              url={talk.URL}
+            />
+          );
+        })
+      }
+    </section>
+  </main>
+  <Footer />
+</Layout>
