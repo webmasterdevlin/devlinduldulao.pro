@@ -14,7 +14,11 @@ const TalkCard = ({ event, date, location, title, url }: TalkCardProps) => (
     <p className="text-gray-600 dark:text-gray-300 text-sm">{date}</p>
     <p className="text-gray-600 dark:text-gray-300 text-sm">{location}</p>
     <h4 className="text-md mt-2 font-semibold">{title}</h4>
-    <a href={url} className="text-cyan-600 dark:text-cyan-400 hover:underline">
+    <a
+      href={url}
+      target="_blank"
+      className="text-cyan-600 dark:text-cyan-400 hover:underline"
+    >
       {url}
     </a>
   </div>
