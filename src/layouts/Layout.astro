@@ -2,6 +2,9 @@
 import { SITE } from "@config";
 import "@styles/base.css";
 import { ViewTransitions } from "astro:transitions";
+import BodyGoogleAds from "google/BodyGoogleAds.astro";
+import BodyGoogleTagManager from "google/BodyGoogleTagManager.astro";
+import HeadGoogleTagManager from "google/HeadGoogleTagManager.astro";
 
 export type Props = {
   title?: string;
@@ -73,60 +76,15 @@ const socialImageURL = new URL(
 
     <meta name="theme-color" content="" />
 
-    <!-- Google Search Console -->
-    <!-- <meta
-      name="google-site-verification"
-      content="_FpQVgQ5zVW6rC2f8WwPIKKkrumWK55R455qLLDD35I"
-    /> -->
-
     <ViewTransitions />
 
     <script is:inline src="/toggle-theme.js"></script>
 
-    <!-- Google Tag Manager -->
-    <script type="text/partytown">
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-N3H2676J");
-    </script>
-    <!-- End Google Tag Manager -->
+    <HeadGoogleTagManager />
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-N3H2676J"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"></iframe></noscript
-    >
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- Start Google Ads -->
-    <div class="flex justify-center">
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1106578431736357"
-        crossorigin="anonymous"></script>
-
-      <ins
-        class="adsbygoogle"
-        style="display:block; text-align:center;"
-        data-ad-layout="in-article"
-        data-ad-format="fluid"
-        data-ad-client="ca-pub-1106578431736357"
-        data-ad-slot="9433231619"></ins>
-      <script type="text/partytown">
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-    <!-- End Google Ads -->
+    <BodyGoogleTagManager />
     <slot />
+    <BodyGoogleAds />
   </body>
 </html>
