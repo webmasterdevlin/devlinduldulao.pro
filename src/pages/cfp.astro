@@ -1,0 +1,30 @@
+---
+import { SITE } from "@config";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import cfps from "@content/cfps";
+import CfpCard from "@components/CfpCard";
+---
+
+<Layout title={`CFP | ${SITE.title}`}>
+  <Header activeNav="cfp" />
+  <Breadcrumbs />
+  <main id="main-content">
+    <section id="speaking" class="prose mb-28 max-w-3xl prose-img:border-0">
+      <h1 class="text-2xl tracking-wider sm:text-3xl">Cfps</h1>
+      <h2>List of conferences for CFPs</h2>
+      {
+        cfps.map(cfp => {
+          return (
+            <Fragment key={cfp.url}>
+              <CfpCard {...cfp} />
+            </Fragment>
+          );
+        })
+      }
+    </section>
+  </main>
+  <Footer />
+</Layout>

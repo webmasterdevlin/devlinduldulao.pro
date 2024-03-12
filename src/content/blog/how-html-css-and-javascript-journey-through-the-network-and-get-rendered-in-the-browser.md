@@ -21,7 +21,7 @@ The intricate dance of HTML, CSS, and JavaScript is at the heart of every websit
    These are the core elements of any website. HTML (HyperText Markup Language) provides the basic structure, CSS (Cascading Style Sheets) is responsible for layout and style, and JavaScript enables interactive features. When a user requests a web page, these files are sent across the network from the web server to the user's browser.
 
 2. **Data Transfer:**  
-   The transfer process commences once a user types a URL into the browser's address bar. The browser sends a request to the server that hosts the website. HTTP (HyperText Transfer Protocol) or its secure version, HTTPS, usually facilitates this communication. The server responds by sending the requested files back to the browser. These files are sent as a series of packets, which the browser reassembles.
+   The transfer process commences once a user types a url into the browser's address bar. The browser sends a request to the server that hosts the website. HTTP (HyperText Transfer Protocol) or its secure version, HTTPS, usually facilitates this communication. The server responds by sending the requested files back to the browser. These files are sent as a series of packets, which the browser reassembles.
 
 ## Rendering in the Browser
 

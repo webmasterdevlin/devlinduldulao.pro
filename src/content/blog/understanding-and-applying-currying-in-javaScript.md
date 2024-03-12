@@ -29,7 +29,7 @@ Currying is the process of transforming a function with multiple arguments into 
 
 ## When to Use Currying
 
-1. Event Handling: Currying can be beneficial in scenarios like event handling where you need to pass additional data.
+1. event Handling: Currying can be beneficial in scenarios like event handling where you need to pass additional data.
 
 2. Configuration Settings: For setting up functions with predefined configurations.
 
@@ -52,12 +52,12 @@ const multiplyByTwo = multiply(2);
 console.log(multiplyByTwo(3)); // 6
 ```
 
-### Event Handling Example
+### event Handling Example
 
 ```javascript
 function handleEvent(eventType) {
   return function (event) {
-    console.log(`Event type: ${eventType}, Target: ${event.target}`);
+    console.log(`event type: ${eventType}, Target: ${event.target}`);
   };
 }
 
@@ -70,7 +70,7 @@ document.addEventListener("click", handleClick);
 ```javascript
 function setupRequest(url) {
   return function (options) {
-    // Perform fetch with URL and options
+    // Perform fetch with url and options
     fetch(url, options).then(/* ... */);
   };
 }
@@ -101,7 +101,7 @@ console.log(configureObject("name")("Alice")("age")(30));
 
 This example demonstrates creating a configuration object using currying. Each function call sets a key-value pair in the object.
 
-### Curried Function to Build a URL
+### Curried Function to Build a url
 
 ```javascript
 function buildURL(protocol) {
@@ -116,7 +116,7 @@ console.log(buildURL("https")("example.com")("path/to/resource"));
 // "https://example.com/path/to/resource"
 ```
 
-This example constructs a URL by currying, taking protocol, domain, and path as separate arguments.
+This example constructs a url by currying, taking protocol, domain, and path as separate arguments.
 
 ## Best Practices and Considerations
 

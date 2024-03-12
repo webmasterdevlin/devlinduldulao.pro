@@ -47,7 +47,7 @@ In this example, innerFunction has access to variables in its own scope (innerVa
 
 2. Function factories: A closure can be used to create multiple functions using the same function body but holding different state information. This is fundamental in creating functions in a loop.
 
-3. Event handlers and callbacks: Closures are widely used in event handlers and callback functions where you might want a function to have access to variables set at the time of creation of the function.
+3. event handlers and callbacks: Closures are widely used in event handlers and callback functions where you might want a function to have access to variables set at the time of creation of the function.
 
 4. Function currying: Function currying in JavaScript is a technique of evaluating a function with multiple arguments, into a sequence of functions with single argument. In essence, when a function, instead of taking all arguments at one time, takes the first one and return a new function that takes the second one and returns a new function which takes the third one, and so forth, until all arguments have been fulfilled.
 
