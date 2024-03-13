@@ -427,6 +427,71 @@ const conferences: Cfp[] = [
     month: "March",
     location: "Amsterdam, Netherlands",
   },
+  {
+    url: "https://javacro.hr",
+    month: "October",
+    location: "Rovinj, Croatia",
+  },
+  {
+    url: "https://javazone.no",
+    month: "September",
+    location: "Oslo, Norway",
+  },
+  {
+    url: "https://springio.net",
+    month: "May",
+    location: "Barcelona, Spain",
+  },
+  {
+    url: "https://geecon.org",
+    month: "May",
+    location: "Krakow, Poland",
+  },
+  {
+    url: "https://reactadvanced.com",
+    month: "October",
+    location: "London, UK",
+  },
+  {
+    url: "https://vueday.it",
+    month: "November",
+    location: "Verona, Italy",
+  },
+  {
+    url: "https://reactjsday.it",
+    month: "October",
+    location: "Verona, Italy",
+  },
+  {
+    url: "https://angularday.it",
+    month: "June",
+    location: "Verona, Italy",
+  },
+  {
+    url: "https://ng-de.org",
+    month: "October",
+    location: "Berlin, Germany",
+  },
+  {
+    url: "https://ngrome.io",
+    month: "June",
+    location: "Rome, Italy",
+  },
+  {
+    url: "https://reactsummit.com",
+    month: "June",
+    location: "Amsterdam, Netherlands",
+  },
+  {
+    url: "https://reactsummit.com",
+    month: "June",
+    location: "Amsterdam, Netherlands",
+  },
+  {
+    url: "https://reactsummit.us",
+    month: "November",
+    location: "New York, USA",
+  },
 ];
 export default conferences;
 
