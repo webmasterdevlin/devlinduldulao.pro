@@ -517,6 +517,11 @@ const conferences: Cfp[] = [
     month: "May",
     location: "Tenerife, Spain",
   },
+  {
+    url: "https://sunny-tech.io",
+    month: "July",
+    location: "Montpellier, France",
+  },
 ];
 export default conferences;
 
