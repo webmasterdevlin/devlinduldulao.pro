@@ -512,6 +512,11 @@ const conferences: Cfp[] = [
     month: "May",
     location: "Salt Lake City, USA",
   },
+  {
+    url: "https://jsdaycanarias.com",
+    month: "May",
+    location: "Tenerife, Spain",
+  },
 ];
 export default conferences;
 
