@@ -2,6 +2,11 @@ import type { Talk } from "./talks";
 
 const conferences: Cfp[] = [
   {
+    url: "https://api-platform.com/con",
+    month: "September",
+    location: "Lille, France",
+  },
+  {
     url: "https://djangocon.eu",
     month: "June",
     location: "Vigo, Spain",
@@ -121,6 +126,81 @@ const conferences: Cfp[] = [
     url: "https://shift.infobip.com",
     month: "September",
     location: "Zadar, Croatia",
+  },
+  {
+    url: "https://trondheimdc.no",
+    month: "October",
+    location: "Trondheim, Norway",
+  },
+  {
+    url: "https://chainreactconf.com",
+    month: "July",
+    location: "Portland, Oregon, USA",
+  },
+  {
+    url: "https://allthingsopen.org",
+    month: "October",
+    location: "Raleigh, North Carolina, USA",
+  },
+  {
+    url: "https://devdays.lt",
+    month: "May",
+    location: "Vilnius, Lithuania",
+  },
+  {
+    url: "https://www.developer-week.de",
+    month: "Juli",
+    location: "Nuremberg, Germany",
+  },
+  {
+    url: "https://enterjs.de",
+    month: "May",
+    location: "Darmstadt, Germany",
+  },
+  {
+    url: "https://js-poland.pl",
+    month: "November",
+    location: "Warsaw, Poland",
+  },
+  {
+    url: "europe.jcon.one",
+    month: "May",
+    location: "Cologne, Germany",
+  },
+  {
+    url: "https://www.devtalks.ro",
+    month: "May",
+    location: "Bucharest, Romania",
+  },
+  {
+    url: "https://www.updateconference.net",
+    month: "November",
+    location: "Prague, Czech Republic",
+  },
+  {
+    url: "https://armada-js.com",
+    month: "October",
+    location: "Novi Sad, Serbia",
+  },
+  {
+    url: "https://heapcon.io",
+    month: "November",
+    location: "Belgrade, Serbia",
+  },
+  {
+    url: "https://4developers.org.pl",
+    month: "September",
+    location: "Several cities in Poland",
+  },
+  {
+    url: "https://dotnetday.ch",
+    month: "August",
+    location: "Zurich, Switzerland",
+  },
+  {
+    url: "https://www.devday.be",
+    month: "November",
+    location: "Mons, Belgium",
   },
 ];
 // TODO: NDC, Devoxx, Voxx, CityJS,
