@@ -113,6 +113,16 @@ const conferences: Cfp[] = [
     location: "Oslo, Norway",
   },
   {
+    url: "https://ndcsydney.com",
+    month: "February",
+    location: "Sydney, Australia",
+  },
+  {
+    url: "https://ndcmelbourne.com",
+    month: "June",
+    location: "Melbourne, Australia",
+  },
+  {
     url: "https://cphdevfest.com",
     month: "October",
     location: "Copenhagen, Denmark",
@@ -491,6 +501,16 @@ const conferences: Cfp[] = [
     url: "https://reactsummit.us",
     month: "November",
     location: "New York, USA",
+  },
+  {
+    url: "https://codegarden.umbraco.com",
+    month: "June",
+    location: "Odense, Denmark",
+  },
+  {
+    url: "https://remix.run/conf",
+    month: "May",
+    location: "Salt Lake City, USA",
   },
 ];
 export default conferences;
