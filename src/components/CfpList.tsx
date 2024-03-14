@@ -18,7 +18,7 @@ export default function CfpList() {
     });
     const sevenMonths = new Date();
     sixMonths.setMonth(sevenMonths.getMonth() + 7);
-    const seventMonth = sixMonths.toLocaleString("en-US", {
+    const seventMonth = sevenMonths.toLocaleString("en-US", {
       month: "long",
     });
     const filteredList = cfps.filter(
