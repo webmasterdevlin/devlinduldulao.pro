@@ -572,6 +572,16 @@ const conferences: Cfp[] = [
     month: "October",
     location: "Krakow, Poland",
   },
+  {
+    url: "https://epichey.dev",
+    month: "November",
+    location: "Lisbon, Portugal",
+  },
+  {
+    url: "https://devworldconference.com",
+    month: "February",
+    location: "Amsterdam, Netherlands",
+  },
 ];
 export default conferences;
 
