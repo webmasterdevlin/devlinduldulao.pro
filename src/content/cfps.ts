@@ -522,6 +522,36 @@ const conferences: Cfp[] = [
     month: "July",
     location: "Montpellier, France",
   },
+  {
+    url: "https://c3fest.com",
+    month: "June",
+    location: "Amsterdam, Netherlands",
+  },
+  {
+    url: "https://reactconnection.io",
+    month: "April",
+    location: "Paris, France",
+  },
+  {
+    url: "https://www.reactrally.com",
+    month: "August",
+    location: "Utah, USA",
+  },
+  {
+    url: "https://reactlive.nl",
+    month: "September",
+    location: "Amsterdam, Netherlands",
+  },
+  {
+    url: "https://www.reactindia.io",
+    month: "September",
+    location: "Goa, India",
+  },
+  {
+    url: "https://reactnexus.com",
+    month: "July",
+    location: "Bangalore, India",
+  },
 ];
 export default conferences;
 
