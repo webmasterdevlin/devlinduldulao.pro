@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from "react";
 import CfpCard from "./CfpCard";
 import cfps from "@content/cfps";
+import getMonthsFromNow from "@utils/getMonthsFromNow";
 
 export default function CfpList() {
   const [list, setList] = useState(cfps);

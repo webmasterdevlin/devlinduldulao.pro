@@ -6,3 +6,5 @@ const getMonthsFromNow = (howManyMonths: number): string => {
   });
   return month;
 };
+
+export default getMonthsFromNow;
