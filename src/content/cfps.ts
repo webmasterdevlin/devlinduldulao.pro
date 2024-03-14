@@ -552,6 +552,16 @@ const conferences: Cfp[] = [
     month: "July",
     location: "Bangalore, India",
   },
+  {
+    url: "https://laracon.eu",
+    month: "February",
+    location: "Amsterdam, Netherlands",
+  },
+  {
+    url: "https://laracon.au",
+    month: "November",
+    location: "Brisbane, Australia",
+  },
 ];
 export default conferences;
 
