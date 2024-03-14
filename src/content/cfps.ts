@@ -493,11 +493,6 @@ const conferences: Cfp[] = [
     location: "Amsterdam, Netherlands",
   },
   {
-    url: "https://reactsummit.com",
-    month: "June",
-    location: "Amsterdam, Netherlands",
-  },
-  {
     url: "https://reactsummit.us",
     month: "November",
     location: "New York, USA",

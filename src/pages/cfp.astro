@@ -4,8 +4,7 @@ import Breadcrumbs from "@components/Breadcrumbs.astro";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import Layout from "../layouts/Layout.astro";
-import cfps from "@content/cfps";
-import CfpCard from "@components/CfpCard";
+import CfpList from "@components/CfpList";
 ---
 
 <Layout title={`CFP | ${SITE.title}`}>
@@ -14,34 +13,7 @@ import CfpCard from "@components/CfpCard";
   <main id="main-content">
     <section id="speaking" class="prose mb-28 max-w-3xl prose-img:border-0">
       <h1 class="text-2xl tracking-wider sm:text-3xl">Cfps</h1>
-      <h2>List of conferences for CFPs</h2>
-      {
-        cfps
-          .sort((a, b) => {
-            const monthOrder = [
-              "January",
-              "February",
-              "March",
-              "April",
-              "May",
-              "June",
-              "July",
-              "August",
-              "September",
-              "October",
-              "November",
-              "December",
-            ];
-            return monthOrder.indexOf(a.month) - monthOrder.indexOf(b.month);
-          })
-          .map(cfp => {
-            return (
-              <Fragment key={cfp.url}>
-                <CfpCard {...cfp} />
-              </Fragment>
-            );
-          })
-      }
+      <CfpList client:load />
     </section>
   </main>
   <Footer />
