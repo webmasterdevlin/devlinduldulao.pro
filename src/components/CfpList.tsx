@@ -22,14 +22,24 @@ export default function CfpList() {
     setList(filteredList);
   };
 
+  const handleNoFilter = () => {
+    setList(cfps);
+  };
+
   return (
     <>
       <h2>List of conferences for CFPs</h2>
       <button
-        className=" w-full rounded-md py-2 font-medium"
+        className="w-full rounded-md py-2 font-medium"
         onClick={handleFilter}
       >
         Show possible open CFPs
+      </button>
+      <button
+        className="w-full rounded-md py-2 font-medium"
+        onClick={handleNoFilter}
+      >
+        Show all conferences
       </button>
       {list
         .sort((a, b) => {
