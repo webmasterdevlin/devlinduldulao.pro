@@ -7,14 +7,14 @@ export default function CfpList() {
   const [list, setList] = useState(cfps);
 
   const handleFilter = () => {
+    const fourthMonth = getMonthsFromNow(4);
     const fifthMonth = getMonthsFromNow(5);
     const sixthMonth = getMonthsFromNow(6);
-    const seventMonth = getMonthsFromNow(7);
     const filteredList = cfps.filter(
       cfp =>
+        cfp.month === fourthMonth ||
         cfp.month === fifthMonth ||
-        cfp.month === sixthMonth ||
-        cfp.month === seventMonth
+        cfp.month === sixthMonth
     );
     setList(filteredList);
   };
