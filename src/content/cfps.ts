@@ -567,6 +567,11 @@ const conferences: Cfp[] = [
     month: "May",
     location: "The Hague, Netherlands",
   },
+  {
+    url: "https://jdd.org.pl",
+    month: "October",
+    location: "Krakow, Poland",
+  },
 ];
 export default conferences;
 
