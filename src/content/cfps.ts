@@ -562,6 +562,11 @@ const conferences: Cfp[] = [
     month: "November",
     location: "Brisbane, Australia",
   },
+  {
+    url: "https://conference.teqnation.com",
+    month: "May",
+    location: "The Hague, Netherlands",
+  },
 ];
 export default conferences;
 
