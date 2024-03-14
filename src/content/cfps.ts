@@ -582,6 +582,11 @@ const conferences: Cfp[] = [
     month: "February",
     location: "Amsterdam, Netherlands",
   },
+  {
+    url: "https://ng-conf.org",
+    month: "April",
+    location: "Salt Lake City, USA",
+  },
 ];
 export default conferences;
 
