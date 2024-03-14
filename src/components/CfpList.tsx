@@ -11,9 +11,9 @@ export default function CfpList() {
     const seventMonth = getMonthsFromNow(7);
     const filteredList = cfps.filter(
       cfp =>
+        cfp.month === fifthMonth ||
         cfp.month === sixthMonth ||
-        cfp.month === seventMonth ||
-        cfp.month === fifthMonth
+        cfp.month === seventMonth
     );
     setList(filteredList);
   };
