@@ -587,6 +587,11 @@ const conferences: Cfp[] = [
     month: "April",
     location: "Salt Lake City, USA",
   },
+  {
+    url: "https://www.kcdc.info",
+    month: "June",
+    location: "Kansas City, USA",
+  },
 ];
 export default conferences;
 
