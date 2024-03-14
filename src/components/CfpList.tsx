@@ -6,21 +6,9 @@ export default function CfpList() {
   const [list, setList] = useState(cfps);
 
   const handleFilter = () => {
-    const fiveMonths = new Date();
-    fiveMonths.setMonth(fiveMonths.getMonth() + 5);
-    const fifthMonth = fiveMonths.toLocaleString("en-US", {
-      month: "long",
-    });
-    const sixMonths = new Date();
-    sixMonths.setMonth(sixMonths.getMonth() + 6);
-    const sixthMonth = sixMonths.toLocaleString("en-US", {
-      month: "long",
-    });
-    const sevenMonths = new Date();
-    sixMonths.setMonth(sevenMonths.getMonth() + 7);
-    const seventMonth = sevenMonths.toLocaleString("en-US", {
-      month: "long",
-    });
+    const fifthMonth = getMonthsFromNow(5);
+    const sixthMonth = getMonthsFromNow(6);
+    const seventMonth = getMonthsFromNow(7);
     const filteredList = cfps.filter(
       cfp =>
         cfp.month === sixthMonth ||
