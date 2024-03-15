@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from "react";
-import CfpCard from "./CfpCard";
 import cfps from "@content/cfps";
 import getMonthsFromNow from "@utils/getMonthsFromNow";
 import { cn } from "@utils/style";
@@ -79,7 +78,7 @@ export default function CfpList() {
                 <a
                   href={cfp.url}
                   target="_blank"
-                  className="text-cyan-600 dark:text-cyan-400 hover:underline"
+                  className={cn("text-cyan-600 ")}
                 >
                   {cfp.url}
                 </a>
