@@ -587,6 +587,11 @@ const conferences: Cfp[] = [
     month: "June",
     location: "Kansas City, USA",
   },
+  {
+    url: "https://refresh.rocks",
+    month: "April",
+    location: "Tallinn, Estonia",
+  },
 ];
 export default conferences;
 
