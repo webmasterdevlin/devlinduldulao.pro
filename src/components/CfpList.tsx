@@ -26,19 +26,21 @@ export default function CfpList() {
 
   return (
     <>
-      <h2>List of conferences for CFPs</h2>
-      <button
-        className="w-full rounded-md py-2 font-medium"
-        onClick={handleFilter}
-      >
-        Show possible open CFPs
-      </button>
-      <button
-        className="w-full rounded-md py-2 font-medium"
-        onClick={handleNoFilter}
-      >
-        Show all conferences
-      </button>
+      <h2 className="mb-4">List of conferences for CFPs</h2>
+      <section className="mb-4 flex flex-wrap gap-2">
+        <button
+          className="hover:text-white w-full rounded-md py-2 font-medium transition-colors duration-300 ease-in-out hover:bg-skin-accent"
+          onClick={handleFilter}
+        >
+          Show possible open CFPs
+        </button>
+        <button
+          className="hover:text-white w-full rounded-md py-2 font-medium transition-colors duration-300 ease-in-out hover:bg-skin-accent"
+          onClick={handleNoFilter}
+        >
+          Show all conferences
+        </button>
+      </section>
       {list
         .sort((a, b) => {
           const monthOrder = [
@@ -59,31 +61,48 @@ export default function CfpList() {
         })
         .map(cfp => {
           return (
-            <Fragment key={cfp.url}>
-              <div
+            <div
+              key={cfp.url}
+              className={cn(
+                (cfp.month === fourthMonth ||
+                  cfp.month === fifthMonth ||
+                  cfp.month === sixthMonth) &&
+                  "animate-pulse",
+                "bg-white dark:bg-gray-800 mb-5 rounded-lg p-5 shadow-lg"
+              )}
+            >
+              <h3 className="text-cyan-600 dark:text-cyan-400 text-lg font-semibold">
+                {cfp.location}
+              </h3>
+              <p
                 className={cn(
                   (cfp.month === fourthMonth ||
                     cfp.month === fifthMonth ||
                     cfp.month === sixthMonth) &&
-                    "animate-pulse",
-                  "bg-white dark:bg-gray-800 mb-5 rounded-lg p-5 shadow-lg"
+                    "text-skin-accent",
+                  "text-lg font-medium decoration-dashed underline-offset-4"
                 )}
               >
-                <h3 className="text-cyan-600 dark:text-cyan-400 text-lg font-semibold">
-                  {cfp.location}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  {cfp.month}
-                </p>
-                <a
-                  href={cfp.url}
-                  target="_blank"
-                  className={cn("text-cyan-600 ")}
-                >
-                  {cfp.url}
-                </a>
-              </div>
-            </Fragment>
+                {cfp.month}
+              </p>
+              <a
+                href={cfp.url}
+                target="_blank"
+                className="text-gray-600 dark:text-gray-300 transition-colors duration-300 ease-in-out hover:text-skin-accent"
+              >
+                <div>{cfp.url}</div>
+                <div>
+                  {(cfp.month === fourthMonth ||
+                    cfp.month === fifthMonth ||
+                    cfp.month === sixthMonth) && (
+                    <>
+                      <span className="text-skin-accent"> ✔︎</span> see CFP
+                      info
+                    </>
+                  )}
+                </div>
+              </a>
+            </div>
           );
         })}
     </>

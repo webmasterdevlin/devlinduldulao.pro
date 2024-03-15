@@ -596,7 +596,17 @@ const conferences: Cfp[] = [
     url: "https://ncrafts.io",
     month: "May",
     location: "Paris, France",
-  }
+  },
+  {
+    url: "https://www.dotjs.io",
+    month: "June",
+    location: "Paris, France",
+  },
+  {
+    url: "https://warszawskiedniinformatyki.pl",
+    month: "April",
+    location: "Warsaw, Poland",
+  },
 ];
 export default conferences;
 
