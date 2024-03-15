@@ -26,8 +26,7 @@ export default function CfpList() {
 
   return (
     <>
-      <h2 className="mb-4">List of conferences for CFPs</h2>
-      <section className="mb-4 flex flex-wrap gap-2">
+      <section className="my-4 flex flex-wrap gap-2">
         <button
           className="hover:text-white w-full rounded-md py-2 font-medium transition-colors duration-300 ease-in-out hover:bg-skin-accent"
           onClick={handleFilter}
