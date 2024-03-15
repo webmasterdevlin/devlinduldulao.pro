@@ -592,6 +592,11 @@ const conferences: Cfp[] = [
     month: "April",
     location: "Tallinn, Estonia",
   },
+  {
+    url: "https://ncrafts.io",
+    month: "May",
+    location: "Paris, France",
+  }
 ];
 export default conferences;
 
