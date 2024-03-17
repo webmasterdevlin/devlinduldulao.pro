@@ -607,6 +607,11 @@ const conferences: Cfp[] = [
     month: "April",
     location: "Warsaw, Poland",
   },
+  {
+    url: "https://tek.phparch.com",
+    month: "April",
+    location: "Chicago, USA",
+  },
 ];
 export default conferences;
 
