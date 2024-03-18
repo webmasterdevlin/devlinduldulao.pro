@@ -627,6 +627,11 @@ const conferences: Cfp[] = [
     month: "May",
     location: "Johannesburg, South Africa",
   },
+  {
+    url: "https://nordicapis.com",
+    month: "October",
+    location: "Stockholm, Sweden",
+  },
 ];
 export default conferences;
 
