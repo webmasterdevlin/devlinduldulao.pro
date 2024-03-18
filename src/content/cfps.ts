@@ -612,6 +612,21 @@ const conferences: Cfp[] = [
     month: "April",
     location: "Chicago, USA",
   },
+  {
+    url: "https://appel.paris-web.fr",
+    month: "September",
+    location: "Paris, France",
+  },
+  {
+    url: "https://dddeurope.com",
+    month: "May",
+    location: "Amsterdam, Netherlands",
+  },
+  {
+    url: "https://www.devconf.co.za",
+    month: "May",
+    location: "Johannesburg, South Africa",
+  },
 ];
 export default conferences;
 
