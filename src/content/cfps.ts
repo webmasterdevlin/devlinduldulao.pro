@@ -642,6 +642,11 @@ const conferences: Cfp[] = [
     month: "June",
     location: "Stockholm, Sweden",
   },
+  {
+    url: "https://www.mdevcamp.eu",
+    month: "April",
+    location: "Prague, Czech Republic",
+  }
 ];
 export default conferences;
 
