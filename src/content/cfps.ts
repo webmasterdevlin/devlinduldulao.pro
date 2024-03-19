@@ -632,6 +632,16 @@ const conferences: Cfp[] = [
     month: "October",
     location: "Stockholm, Sweden",
   },
+  {
+    url: "https://www.sharepointeurope.com",
+    month: "November",
+    location: "Stockholm, Sweden",
+  },
+  {
+    url: "https://conference.eurostarsoftwaretesting.com",
+    month: "June",
+    location: "Stockholm, Sweden",
+  },
 ];
 export default conferences;
 

@@ -6,6 +6,7 @@ import { cn } from "@utils/style";
 const fourthMonth = getMonthsFromNow(4);
 const fifthMonth = getMonthsFromNow(5);
 const sixthMonth = getMonthsFromNow(6);
+const seventhMonth = getMonthsFromNow(7);
 
 export default function CfpList() {
   const [list, setList] = useState(cfps);
@@ -15,7 +16,8 @@ export default function CfpList() {
       cfp =>
         cfp.month === fourthMonth ||
         cfp.month === fifthMonth ||
-        cfp.month === sixthMonth
+        cfp.month === sixthMonth ||
+        cfp.month === seventhMonth
     );
     setList(filteredList);
   };
@@ -65,7 +67,8 @@ export default function CfpList() {
               className={cn(
                 (cfp.month === fourthMonth ||
                   cfp.month === fifthMonth ||
-                  cfp.month === sixthMonth) &&
+                  cfp.month === sixthMonth ||
+                  cfp.month === seventhMonth) &&
                   "animate-pulse",
                 "bg-white dark:bg-gray-800 mb-5 rounded-lg p-5 shadow-lg"
               )}
@@ -77,7 +80,8 @@ export default function CfpList() {
                 className={cn(
                   (cfp.month === fourthMonth ||
                     cfp.month === fifthMonth ||
-                    cfp.month === sixthMonth) &&
+                    cfp.month === sixthMonth ||
+                    cfp.month === seventhMonth) &&
                     "text-skin-accent",
                   "text-lg font-medium decoration-dashed underline-offset-4"
                 )}
@@ -93,7 +97,8 @@ export default function CfpList() {
                 <div>
                   {(cfp.month === fourthMonth ||
                     cfp.month === fifthMonth ||
-                    cfp.month === sixthMonth) && (
+                    cfp.month === sixthMonth ||
+                    cfp.month === seventhMonth) && (
                     <>
                       <span className="text-skin-accent"> ✔︎</span> see CFP
                       info
