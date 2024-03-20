@@ -183,7 +183,7 @@ const conferences: Cfp[] = [
     location: "Warsaw, Poland",
   },
   {
-    url: "europe.jcon.one",
+    url: "https://europe.jcon.one",
     month: "May",
     location: "Cologne, Germany",
   },
