@@ -15,7 +15,7 @@
     "lint": "eslint .",
     "eslint": "eslint --fix --ext .ts,.tsx ./src",
     "checkTs": "tsc --noEmit",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
