@@ -12,7 +12,7 @@ My daily job is to collaborate in enterprise cloud, web, and mobile development.
 Microsoft MVP | Full-Stack Cloud Engineer | Book Author | Trainer | International Conference Speaker | Austronesian
 
 <div class="flex flex-wrap gap-2 justify-center items-center">
-<a href="https://mvp.microsoft.com/en-us/PublicProfile/5003171"><img class="aligncenter" src="https://web.archive.org/web/20190124165953im_/https://devlinduldulao.pro//wp-content/uploads/2018/08/mvp-devlinduldulao.png" width="300"  /></a>
+<a href="https://mvp.microsoft.com/en-US/MVP/profile/c83b9814-df2f-4a0f-afab-68507666596b"><img class="aligncenter" src="https://web.archive.org/web/20190124165953im_/https://devlinduldulao.pro//wp-content/uploads/2018/08/mvp-devlinduldulao.png" width="300"  /></a>
 
 <a href="https://www.youracclaim.com/users/devlin-duldulao/badges"><img class="aligncenter" src="https://web.archive.org/web/20190124165953im_/https://devlinduldulao.pro//wp-content/uploads/2017/11/MCT.png" width="300" /></a>
 
