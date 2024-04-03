@@ -652,6 +652,11 @@ const conferences: Cfp[] = [
     month: "September",
     location: "Niort, France",
   },
+  {
+    url: "https://frontmania.com",
+    month: "October",
+    location: "Utrecht, Netherlands",
+  },
 ];
 export default conferences;
 
