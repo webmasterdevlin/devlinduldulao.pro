@@ -657,6 +657,11 @@ const conferences: Cfp[] = [
     month: "October",
     location: "Utrecht, Netherlands",
   },
+  {
+    url: "https://www.telerik.com/devreach",
+    month: "October",
+    location: "Sofia, Bulgaria",
+  },
 ];
 export default conferences;
 
