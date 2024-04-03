@@ -1,5 +1,13 @@
 const talks: Talk[] = [
   {
+    event: "Devoxx Poland 2024",
+    date: "June 2024",
+    location: "Krakow, Poland",
+    title:
+      "Integrating conversational AI using Semantic Kernel for Java Developers",
+    url: "https://devoxx.pl",
+  },
+  {
     event: "NDC Oslo 2024",
     date: "June 2024",
     location: "Oslo, Norway",
