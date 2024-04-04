@@ -662,6 +662,11 @@ const conferences: Cfp[] = [
     month: "October",
     location: "Sofia, Bulgaria",
   },
+  {
+    url: "https://devconf.pl",
+    month: "October",
+    location: "Łódź, Poland",
+  },
 ];
 export default conferences;
 
