@@ -42,8 +42,8 @@ export default function CfpList() {
           Show all conferences
         </button>
       </section>
-      {/* sort by month and ascebding alphabetical order of the location */}
       {list
+        .sort((a, b) => a.location.localeCompare(b.location))
         .sort((a, b) => {
           const monthOrder = [
             "January",
@@ -61,7 +61,6 @@ export default function CfpList() {
           ];
           return monthOrder.indexOf(a.month) - monthOrder.indexOf(b.month);
         })
-        .sort((a, b) => a.location.localeCompare(b.location))
         .map(cfp => {
           return (
             <div
