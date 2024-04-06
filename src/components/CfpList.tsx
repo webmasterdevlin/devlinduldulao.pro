@@ -94,7 +94,7 @@ export default function CfpList() {
                 target="_blank"
                 className="text-gray-600 dark:text-gray-300 transition-colors duration-300 ease-in-out hover:text-skin-accent"
               >
-                <div>{cfp.url}</div>
+                <p className="text-sm sm:text-lg">{cfp.url.slice(8)}</p>
                 <div>
                   {(cfp.month === fourthMonth ||
                     cfp.month === fifthMonth ||
