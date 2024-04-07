@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import cfps from "@content/cfps";
 import getMonthsFromNow from "@utils/getMonthsFromNow";
 import { cn } from "@utils/style";
+import shorterDomain from "@utils/shorterDomain";
 
 const fourthMonth = getMonthsFromNow(4);
 const fifthMonth = getMonthsFromNow(5);
@@ -94,7 +95,7 @@ export default function CfpList() {
                 target="_blank"
                 className="text-gray-600 dark:text-gray-300 transition-colors duration-300 ease-in-out hover:text-skin-accent"
               >
-                <p className="text-sm sm:text-lg">{cfp.url.slice(8)}</p>
+                <p className="text-sm sm:text-lg">{shorterDomain(cfp.url)}</p>
                 <div>
                   {(cfp.month === fourthMonth ||
                     cfp.month === fifthMonth ||

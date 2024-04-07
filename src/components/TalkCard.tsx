@@ -1,3 +1,5 @@
+import shorterDomain from "@utils/shorterDomain";
+
 type TalkCardProps = {
   event: string;
   date: string;
@@ -19,7 +21,7 @@ const TalkCard = ({ event, date, location, title, url }: TalkCardProps) => (
       target="_blank"
       className="text-cyan-600 dark:text-cyan-400 hover:underline"
     >
-      {url}
+      {shorterDomain(url)}
     </a>
   </div>
 );
