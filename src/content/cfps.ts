@@ -667,6 +667,11 @@ const conferences: Cfp[] = [
     month: "October",
     location: "Łódź, Poland",
   },
+  {
+    url: "https://jdevsummitil.com",
+    month: "February",
+    location: "Tel Aviv",
+  },
 ];
 export default conferences;
 
