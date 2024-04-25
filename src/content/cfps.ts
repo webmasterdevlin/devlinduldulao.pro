@@ -672,6 +672,26 @@ const conferences: Cfp[] = [
     month: "February",
     location: "Tel Aviv",
   },
+  {
+    url: "https://datainnovationsummit.com",
+    month: "April",
+    location: "Stockholm, Sweden",
+  },
+  {
+    url: "https://apac.datainnovationsummit.com",
+    month: "March",
+    location: "Singapore",
+  },
+  {
+    url: "https://mea.datainnovationsummit.com",
+    month: "May",
+    location: "Dubai, UAE",
+  },
+  {
+    url: "https://anz.datainnovationsummit.com",
+    month: "October",
+    location: "Melbourne, Australia",
+  },
 ];
 export default conferences;
 
