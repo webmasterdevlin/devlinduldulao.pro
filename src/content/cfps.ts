@@ -692,6 +692,11 @@ const conferences: Cfp[] = [
     month: "October",
     location: "Melbourne, Australia",
   },
+  {
+    url: "https://cfp.internals.tech",
+    month: "April",
+    location: "Cyprus",
+  },
 ];
 export default conferences;
 
