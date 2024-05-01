@@ -697,6 +697,11 @@ const conferences: Cfp[] = [
     month: "April",
     location: "Cyprus",
   },
+  {
+    url: "https://shipitcon.com",
+    month: "August",
+    location: "Dublin, Ireland",
+  },
 ];
 export default conferences;
 
