@@ -628,11 +628,6 @@ const conferences: Cfp[] = [
     location: "Johannesburg, South Africa",
   },
   {
-    url: "https://nordicapis.com",
-    month: "October",
-    location: "Stockholm, Sweden",
-  },
-  {
     url: "https://www.sharepointeurope.com",
     month: "November",
     location: "Stockholm, Sweden",
