@@ -697,6 +697,11 @@ const conferences: Cfp[] = [
     month: "August",
     location: "Dublin, Ireland",
   },
+  {
+    url: "https://www.cloudbrew.be",
+    month: "December",
+    location: "Mechelen, Belgium",
+  },
 ];
 export default conferences;
 
