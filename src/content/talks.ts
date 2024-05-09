@@ -1,5 +1,12 @@
 const talks: Talk[] = [
   {
+    event: "NG DE - Angular Conference 2024",
+    date: "October 2024",
+    location: "Bonn, Germany",
+    title: "Angular Tanstack Query",
+    url: "https://ng-de.org",
+  },
+  {
     event: "NDC Oslo 2024",
     date: "June 2024",
     location: "Oslo, Norway",
