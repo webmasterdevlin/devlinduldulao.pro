@@ -702,6 +702,11 @@ const conferences: Cfp[] = [
     month: "December",
     location: "Mechelen, Belgium",
   },
+  {
+    url: "https://ffconf.org/articles/cfp/",
+    month: "November",
+    location: "Brighton, UK",
+  },
 ];
 export default conferences;
 
