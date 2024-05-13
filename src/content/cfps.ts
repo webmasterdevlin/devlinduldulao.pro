@@ -712,6 +712,11 @@ const conferences: Cfp[] = [
     month: "May",
     location: "Istanbul, Turkey",
   },
+  {
+    url: "https://infoshare.pl/conference/call-for-speakers",
+    month: "May",
+    location: "Gdansk, Poland",
+  },
 ];
 export default conferences;
 
