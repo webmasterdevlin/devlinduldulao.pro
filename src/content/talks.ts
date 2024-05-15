@@ -7,6 +7,13 @@ const talks: Talk[] = [
     url: "https://ng-de.org",
   },
   {
+    event: "React Alicante 2024",
+    date: "September 2024",
+    location: "Alicante, Spain",
+    title: "Tanstack Router",
+    url: "https://reactalicante.es",
+  },
+  {
     event: "NDC Oslo 2024",
     date: "June 2024",
     location: "Oslo, Norway",
