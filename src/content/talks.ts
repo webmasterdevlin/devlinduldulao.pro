@@ -1,5 +1,19 @@
 const talks: Talk[] = [
   {
+    event: "iJS Singapore",
+    date: "November 2024",
+    location: "Singapore",
+    title: "AnalogJS BFF pattern",
+    url: "https://javascript-conference.com/singapore",
+  },
+  {
+    event: "Update Prague Conference",
+    date: "November 2024",
+    location: "Prague, Czech Republic",
+    title: "AnalogJS and Remix BFF pattern",
+    url: "https://www.updateconference.net",
+  },
+  {
     event: "NG DE - Angular Conference 2024",
     date: "October 2024",
     location: "Bonn, Germany",
