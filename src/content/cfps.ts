@@ -2,6 +2,11 @@ import type { Talk } from "./talks";
 
 const conferences: Cfp[] = [
   {
+    url: "https://www.welovespeed.com",
+    month: "November",
+    location: "Nante, France",
+  },
+  {
     url: "https://api-platform.com/con",
     month: "September",
     location: "Lille, France",
