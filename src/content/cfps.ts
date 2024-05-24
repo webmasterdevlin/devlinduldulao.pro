@@ -722,6 +722,11 @@ const conferences: Cfp[] = [
     month: "September",
     location: "Montreal, Canada",
   },
+  {
+    url: "https://www.nodeconf.eu",
+    month: "November",
+    location: "Kilkenny, Ireland",
+  },
 ];
 export default conferences;
 
