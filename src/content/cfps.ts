@@ -717,6 +717,11 @@ const conferences: Cfp[] = [
     month: "May",
     location: "Gdansk, Poland",
   },
+  {
+    url: "https://rustconf.com",
+    month: "September",
+    location: "Montreal, Canada",
+  },
 ];
 export default conferences;
 

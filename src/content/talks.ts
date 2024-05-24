@@ -14,6 +14,13 @@ const talks: Talk[] = [
     url: "https://www.updateconference.net",
   },
   {
+    event: "TDC 2024",
+    date: "October 2024",
+    location: "Trondheim, Norway",
+    title: "fault handling with Retry and Circuit Breaker Design Patterns",
+    url: "https://2024.trondheimdc.no",
+  },
+  {
     event: "NG DE - Angular Conference 2024",
     date: "October 2024",
     location: "Bonn, Germany",
