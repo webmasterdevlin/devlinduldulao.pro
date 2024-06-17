@@ -2,6 +2,11 @@ import type { Talk } from "./talks";
 
 const conferences: Cfp[] = [
   {
+    url: "https://www.lambda.world",
+    month: "October",
+    location: "Cadiz, Spain",
+  },
+  {
     url: "squiggleconf.com",
     month: "October",
     location: "Boston, USA",
