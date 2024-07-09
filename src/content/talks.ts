@@ -1,5 +1,12 @@
 const talks: Talk[] = [
   {
+    event: "JS Conf Chile",
+    date: "December 2024",
+    location: "Santiago, Chile",
+    title: "Benchmarking Bun and other JS tools",
+    url: "https://jsconf.cl",
+  },
+  {
     event: "iJS Singapore",
     date: "November 2024",
     location: "Singapore",
@@ -19,6 +26,13 @@ const talks: Talk[] = [
     location: "Trondheim, Norway",
     title: "fault handling with Retry and Circuit Breaker Design Patterns",
     url: "https://2024.trondheimdc.no",
+  },
+  {
+    event: "Voxxed Days Thessaloniki",
+    date: "October 2024",
+    location: "Thessaloniki, Greece",
+    title: "Building Next-Gen Cross-Platform Apps with Tauri 2.0",
+    url: "https://voxxeddays.com/thessaloniki/",
   },
   {
     event: "NG DE - Angular Conference 2024",
