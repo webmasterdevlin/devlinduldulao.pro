@@ -43,6 +43,9 @@ export default defineConfig({
     },
   },
   scopedStyleStrategy: "where",
+  experimental: {
+    contentLayer: true,
+  },
   output: "static",
   adapter: vercelStatic(),
   image: {

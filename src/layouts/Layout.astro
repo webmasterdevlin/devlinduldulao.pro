@@ -1,10 +1,11 @@
 ---
-import { SITE } from "@config";
+import { LOCALE, SITE } from "@config";
 import "@styles/base.css";
 import { ViewTransitions } from "astro:transitions";
-import BodyGoogleAds from "google/BodyGoogleAds.astro";
 import BodyGoogleTagManager from "google/BodyGoogleTagManager.astro";
 import HeadGoogleTagManager from "google/HeadGoogleTagManager.astro";
+
+const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
 export interface Props {
   title?: string;
@@ -54,18 +55,13 @@ const structuredData = {
 
 <!doctype html>
 <html
-  lang="en"
+  lang=`${LOCALE.lang ?? "en"}`
   class={`${scrollSmooth && "scroll-smooth"}`}
 >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
 
@@ -74,13 +70,37 @@ const structuredData = {
     <meta name="title" content={title} />
     <meta name="description" content={description} />
     <meta name="author" content={author} />
-    <link rel="sitemap" href="/sitemap-0.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Custom -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing Script"
+      rel="stylesheet"
+    />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={socialImageURL} />
+
+    <!-- Article Published/Modified time -->
+    {
+      pubDatetime && (
+        <meta
+          property="article:published_time"
+          content={pubDatetime.toISOString()}
+        />
+      )
+    }
+    {
+      modDatetime && (
+        <meta
+          property="article:modified_time"
+          content={modDatetime.toISOString()}
+        />
+      )
+    }
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -90,7 +110,7 @@ const structuredData = {
     <meta property="twitter:image" content={socialImageURL} />
 
     <!-- Google JSON-LD Structured data -->
-    <script
+    <script is:inline
       type="application/ld+json"
       set:html={JSON.stringify(structuredData)}
     />
@@ -108,11 +128,21 @@ const structuredData = {
     />
     <meta name="theme-color" content="" />
 
+    {
+      // If PUBLIC_GOOGLE_SITE_VERIFICATION is set in the environment variable,
+      // include google-site-verification tag in the heading
+      // Learn more: https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag
+      googleSiteVerification && (
+        <meta
+          name="google-site-verification"
+          content={googleSiteVerification}
+        />
+      )
+    }
+
     <ViewTransitions />
-
-    <script is:inline src="/toggle-theme.js"></script>
-
     <HeadGoogleTagManager />
+    <script is:inline src="/toggle-theme.js"></script>
   </head>
   <body>
     <BodyGoogleTagManager />
