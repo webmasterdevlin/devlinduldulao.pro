@@ -1,13 +1,16 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://devlinduldulao.pro/", // replace this with your deployed domain
+  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
   author: "Devlin Duldulao",
   desc: "My personal blog about web development and other stuff.",
   title: "Devlin Duldulao",
+  profile: "https://devlinduldulao.pro/",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
+  postPerIndex: 3,
   postPerPage: 3,
+  scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 
 export const LOCALE = ["en-EN"]; // set to [] to use the environment default

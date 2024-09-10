@@ -1,6 +1,6 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import cfps from "@content/cfps";
-import getMonthsFromNow from "@utils/getMonthsFromNow";
+import getMonthsFromNow from "@utils/getMonthsFromNow.ts";
 import { cn } from "@utils/style";
 import shorterDomain from "@utils/shorterDomain";
 
@@ -71,7 +71,7 @@ export default function CfpList() {
                   cfp.month === fifthMonth ||
                   cfp.month === sixthMonth ||
                   cfp.month === seventhMonth) &&
-                  "animate-pulse",
+                "animate-pulse",
                 "bg-white dark:bg-gray-800 mb-5 rounded-lg p-5 shadow-lg"
               )}
             >
@@ -84,7 +84,7 @@ export default function CfpList() {
                     cfp.month === fifthMonth ||
                     cfp.month === sixthMonth ||
                     cfp.month === seventhMonth) &&
-                    "text-skin-accent",
+                  "text-skin-accent",
                   "text-lg font-medium decoration-dashed underline-offset-4"
                 )}
               >

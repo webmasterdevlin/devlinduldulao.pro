@@ -6,30 +6,57 @@ import BodyGoogleAds from "google/BodyGoogleAds.astro";
 import BodyGoogleTagManager from "google/BodyGoogleTagManager.astro";
 import HeadGoogleTagManager from "google/HeadGoogleTagManager.astro";
 
-export type Props = {
+export interface Props {
   title?: string;
   author?: string;
+  profile?: string;
   description?: string;
   ogImage?: string;
   canonicalURL?: string;
-};
+  pubDatetime?: Date;
+  modDatetime?: Date | null;
+  scrollSmooth?: boolean;
+}
 
 const {
   title = SITE.title,
   author = SITE.author,
+  profile = SITE.profile,
   description = SITE.desc,
   ogImage = SITE.ogImage,
   canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
+  pubDatetime,
+  modDatetime,
+  scrollSmooth = false,
 } = Astro.props;
 
 const socialImageURL = new URL(
   ogImage ?? SITE.ogImage ?? "og.png",
   Astro.url.origin
 ).href;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: `${title}`,
+  image: `${socialImageURL}`,
+  datePublished: `${pubDatetime?.toISOString()}`,
+  ...(modDatetime && { dateModified: modDatetime.toISOString() }),
+  author: [
+    {
+      "@type": "Person",
+      name: `${author}`,
+      url: `${profile}`,
+    },
+  ],
+};
 ---
 
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class={`${scrollSmooth && "scroll-smooth"}`}
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -62,18 +89,23 @@ const socialImageURL = new URL(
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={socialImageURL} />
 
+    <!-- Google JSON-LD Structured data -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(structuredData)}
+    />
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Dancing Script"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing Script"
+      rel="stylesheet"
+    />
     <meta name="theme-color" content="" />
 
     <ViewTransitions />
@@ -85,6 +117,5 @@ const socialImageURL = new URL(
   <body>
     <BodyGoogleTagManager />
     <slot />
-    <BodyGoogleAds />
   </body>
 </html>

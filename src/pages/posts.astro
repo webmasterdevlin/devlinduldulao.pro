@@ -15,4 +15,4 @@ const totalPages = getPageNumbers(sortedPosts.length);
 const paginatedPosts = sortedPosts.slice(0, SITE.postPerPage);
 ---
 
-<PostList posts={paginatedPosts} pageNum={1} totalPages={totalPages.length} />
+<PostList paginatedPosts={paginatedPosts} currentPage={1} totalPages={totalPages.length} />

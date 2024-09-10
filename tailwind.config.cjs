@@ -56,6 +56,7 @@ module.exports = {
       },
       fontFamily: {
         mono: ["IBM Plex Mono", "monospace"],
+        'dancing-script': ['"Dancing Script"', 'cursive'],
       },
 
       typography: {
