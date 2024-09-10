@@ -34,13 +34,13 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Facebook",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://www.facebook.com/silverdevlin",
     linkTitle: `${SITE.title} on Facebook`,
     active: false,
   },
   {
     name: "Instagram",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://www.instagram.com/devlinduldulao/",
     linkTitle: `${SITE.title} on Instagram`,
     active: false,
   },
@@ -52,7 +52,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:webmasterdevlinl@gmail.com",
     linkTitle: `Send an email to ${SITE.title}`,
     active: false,
   },
@@ -64,13 +64,13 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Twitch",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://www.twitch.tv/webmasterdevlin",
     linkTitle: `${SITE.title} on Twitch`,
     active: false,
   },
   {
     name: "YouTube",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://www.youtube.com/devlinduldulao",
     linkTitle: `${SITE.title} on YouTube`,
     active: false,
   },
