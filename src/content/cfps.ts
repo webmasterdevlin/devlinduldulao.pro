@@ -2,6 +2,11 @@ import type { Talk } from "./talks";
 
 const conferences: Cfp[] = [
   {
+    url: 'https://ndcmelbourne.com',
+    month: 'April',
+    location: 'Melbourne, Australia',
+  },
+  {
     url: "https://wts.sh",
     month: "September",
     location: "Macedonia",
