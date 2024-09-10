@@ -21,10 +21,17 @@ const talks: Talk[] = [
     url: "https://www.updateconference.net",
   },
   {
+    event: "Heapcon",
+    date: "November 2024",
+    location: "Belgrade, Serbia",
+    title: "AnalogJS BFF pattern",
+    url: "https://heapcon.io",
+  },
+  {
     event: "TDC 2024",
     date: "October 2024",
     location: "Trondheim, Norway",
-    title: "fault handling with Retry and Circuit Breaker Design Patterns",
+    title: "Fault handling with Retry and Circuit Breaker Design Patterns",
     url: "https://2024.trondheimdc.no",
   },
   {
