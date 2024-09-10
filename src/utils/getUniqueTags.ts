@@ -1,22 +1,16 @@
 import { slugifyStr } from "./slugify";
 import type { CollectionEntry } from "astro:content";
-import postFilter from "./postFilter";
-
-interface Tag {
-  tag: string;
-  tagName: string;
-}
 
 const getUniqueTags = (posts: CollectionEntry<"blog">[]) => {
-  const tags: Tag[] = posts
-    .filter(postFilter)
+  const filteredPosts = posts.filter(({ data }) => !data.draft);
+  const tags: string[] = filteredPosts
     .flatMap(post => post.data.tags)
-    .map(tag => ({ tag: slugifyStr(tag), tagName: tag }))
+    .map(tag => slugifyStr(tag))
     .filter(
-      (value, index, self) =>
-        self.findIndex(tag => tag.tag === value.tag) === index
+      (value: string, index: number, self: string[]) =>
+        self.indexOf(value) === index
     )
-    .sort((tagA, tagB) => tagA.tag.localeCompare(tagB.tag));
+    .sort((tagA: string, tagB: string) => tagA.localeCompare(tagB));
   return tags;
 };
 

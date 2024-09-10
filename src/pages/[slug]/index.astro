@@ -4,7 +4,7 @@ import Posts from "@layouts/Posts.astro";
 import PostDetails from "@layouts/PostDetails.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import getPageNumbers from "@utils/getPageNumbers";
-import getPagination from "@utils/getPagination";
+import { SITE } from "@config";
 import getPostsWithRT from "@utils/getPostsWithRT";
 
 export interface Props {
@@ -35,10 +35,20 @@ const posts = await getCollection("blog");
 
 const sortedPosts = await getSortedPosts(posts);
 
-const pagination = getPagination({
-  posts: sortedPosts,
-  page: slug,
-});
+const totalPages = getPageNumbers(sortedPosts.length);
+
+const currentPage =
+  slug && !isNaN(Number(slug)) && totalPages.includes(Number(slug))
+    ? Number(slug)
+    : 0;
+const lastPost = currentPage * SITE.postPerPage;
+const startPost = lastPost - SITE.postPerPage;
+
+const paginatedPosts = sortedPosts.slice(startPost, lastPost);
 ---
 
-{post ? <PostDetails post={post} /> : <Posts {...pagination} />}
+{post ? <PostDetails post={post} /> : <Posts
+  paginatedPosts={paginatedPosts}
+  currentPage={currentPage}
+  totalPages={totalPages.length}
+/>}

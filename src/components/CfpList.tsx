@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import cfps from "@content/cfps";
-import getMonthsFromNow from "@utils/getMonthsFromNow.ts";
+import getMonthsFromNow from "@utils/getMonthsFromNow";
 import { cn } from "@utils/style";
 import shorterDomain from "@utils/shorterDomain";
 
