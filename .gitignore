@@ -22,9 +22,6 @@ pnpm-debug.log*
 # ignore .astro directory
 .astro
 
-# ignore Jampack cache files
-.jampack/
-
 # yarn
 .yarn/*
 !.yarn/patches
@@ -34,14 +31,5 @@ pnpm-debug.log*
 !.yarn/versions
 .pnp.*
 
-.husky
-.vercel
-.vscode
-node_modules
 
-.zshrc
-
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-bun.lockb
+.vercel/
