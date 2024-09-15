@@ -2,14 +2,19 @@ import type { Talk } from "./talks";
 
 const conferences: Cfp[] = [
   {
-    url: 'https://jsday.it',
-    month: 'October',
-    location: 'Verona, Italy',
+    url: "https://www.nidevconf.com",
+    month: "November",
+    location: "Belfast, UK",
   },
   {
-    url: 'https://ndcmelbourne.com',
-    month: 'April',
-    location: 'Melbourne, Australia',
+    url: "https://jsday.it",
+    month: "October",
+    location: "Verona, Italy",
+  },
+  {
+    url: "https://ndcmelbourne.com",
+    month: "April",
+    location: "Melbourne, Australia",
   },
   {
     url: "https://wts.sh",
