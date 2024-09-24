@@ -4,6 +4,7 @@ import "@styles/base.css";
 import { ViewTransitions } from "astro:transitions";
 import BodyGoogleTagManager from "google/BodyGoogleTagManager.astro";
 import HeadGoogleTagManager from "google/HeadGoogleTagManager.astro";
+import { pwaInfo } from "virtual:pwa-info";
 
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
@@ -59,6 +60,13 @@ const structuredData = {
   class={`${scrollSmooth && "scroll-smooth"}`}
 >
   <head>
+    <!-- PWA -->
+    <link rel="apple-touch-icon" href="/pwa-192x192.png" />
+    <meta name="msapplication-TileColor" content="#464646" />
+    <meta name="theme-color" content="#191919" />
+    <script src="/src/pwa.ts"></script>
+    {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -110,7 +118,8 @@ const structuredData = {
     <meta property="twitter:image" content={socialImageURL} />
 
     <!-- Google JSON-LD Structured data -->
-    <script is:inline
+    <script
+      is:inline
       type="application/ld+json"
       set:html={JSON.stringify(structuredData)}
     />
