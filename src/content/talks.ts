@@ -1,12 +1,5 @@
 const talks: Talk[] = [
   {
-    event: "JS Conf Chile",
-    date: "December 2024",
-    location: "Santiago, Chile",
-    title: "Benchmarking Bun and other JS tools",
-    url: "https://jsconf.cl",
-  },
-  {
     event: "iJS Singapore",
     date: "November 2024",
     location: "Singapore",
@@ -14,18 +7,18 @@ const talks: Talk[] = [
     url: "https://javascript-conference.com/singapore",
   },
   {
-    event: "Update Prague Conference",
-    date: "November 2024",
-    location: "Prague, Czech Republic",
-    title: "AnalogJS and Remix BFF pattern",
-    url: "https://www.updateconference.net",
-  },
-  {
     event: "Heapcon",
     date: "November 2024",
     location: "Belgrade, Serbia",
     title: "AnalogJS BFF pattern",
     url: "https://heapcon.io",
+  },
+  {
+    event: "React Advanced London",
+    date: "October 2024",
+    location: "Online",
+    title: "Is Bun really that fast?",
+    url: "https://reactadvanced.com",
   },
   {
     event: "TDC 2024",
