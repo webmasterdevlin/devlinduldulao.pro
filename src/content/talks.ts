@@ -7,6 +7,13 @@ const talks: Talk[] = [
     url: "https://javascript-conference.com/singapore",
   },
   {
+    event: "Update Prague Conference",
+    date: "November 2024",
+    location: "Prague, Czech Republic",
+    title: "AnalogJS and Remix BFF pattern",
+    url: "https://www.updateconference.net",
+  },
+  {
     event: "Heapcon",
     date: "November 2024",
     location: "Belgrade, Serbia",
