@@ -1,5 +1,19 @@
 const talks: Talk[] = [
   {
+    event: "Future Frontend 2025",
+    date: "May 2025",
+    location: "Helsinki, Finland",
+    title: "NextJS vs Tanstack Start",
+    url: "https://futurefrontend.com",
+  },
+  {
+    event: "Armada JS 2024",
+    date: "December 2024",
+    location: "Novi Sad, Serbia",
+    title: "Tauri v2.0",
+    url: "https://armada-js.com",
+  },
+  {
     event: "iJS Singapore",
     date: "November 2024",
     location: "Singapore",
