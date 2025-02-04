@@ -3,7 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-Devlin Duldulao, originally from the Philippines, is a full-stack cloud engineer in Norway. As a Microsoft MVP, he is a prolific trainer, conference speaker, and published book author who has dedicated his career to sharing his extensive knowledge. As a chief consultant at Inmeta, Devlin is passionate about staying current with the rapidly evolving tech industry. This has led him to delve into cutting-edge fields such as artificial intelligence, GPT, and prompt engineering. Through his unwavering commitment to learning and empowering others, Devlin continues to impact the global technology community significantly.
+Devlin Duldulao, originally from the Philippines but now living in Oslo, is a full-stack cloud engineer in Norway. As a Microsoft MVP, he is a prolific trainer, conference speaker, and published book author who has dedicated his career to sharing his extensive knowledge. As a chief consultant at Crayon Consulting, Devlin is passionate about staying current with the rapidly evolving tech industry. This has led him to delve into cutting-edge fields such as artificial intelligence, GPT, and prompt engineering. Through his unwavering commitment to learning and empowering others, Devlin continues to impact the global technology community significantly.
 
 My daily job is to collaborate in enterprise cloud, web, and mobile development.
 
