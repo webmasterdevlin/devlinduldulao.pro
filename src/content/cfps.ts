@@ -213,11 +213,6 @@ const conferences: Cfp[] = [
     location: "Sydney, Australia",
   },
   {
-    url: "https://ndcmelbourne.com",
-    month: "June",
-    location: "Melbourne, Australia",
-  },
-  {
     url: "https://cphdevfest.com",
     month: "October",
     location: "Copenhagen, Denmark",
