@@ -338,51 +338,6 @@ const conferences: Cfp[] = [
     location: "Malmö, Sweden",
   },
   {
-    url: "https://london.cityjsconf.org",
-    month: "April",
-    location: "London, UK",
-  },
-  {
-    url: "https://greece.cityjsconf.org",
-    month: "June",
-    location: "Athens, Greece",
-  },
-  {
-    url: "https://medellin.cityjsconf.org",
-    month: "October",
-    location: "Medellin, Colombia",
-  },
-  {
-    url: "https://berlin.cityjsconf.org",
-    month: "November",
-    location: "Berlin, Germany",
-  },
-  {
-    url: "https://nigeria.cityjsconf.org",
-    month: "October",
-    location: "Lagos, Nigeria",
-  },
-  {
-    url: "https://india.cityjsconf.org",
-    month: "December",
-    location: "New Delhi, India",
-  },
-  {
-    url: "https://belgrade.cityjsconf.org",
-    month: "September",
-    location: "Belgrade, Serbia",
-  },
-  {
-    url: "https://singapore.cityjsconf.org",
-    month: "July",
-    location: "Singapore",
-  },
-  {
-    url: "https://brazil.cityjsconf.org",
-    month: "August",
-    location: "São Paulo, Brazil",
-  },
-  {
     url: "https://techorama.nl",
     month: "October",
     location: "Ede, Netherlands",
@@ -406,11 +361,6 @@ const conferences: Cfp[] = [
     url: "https://www.bejs.io",
     month: "May",
     location: "Brussels, Belgium",
-  },
-  {
-    url: "https://reactday.berlin",
-    month: "December",
-    location: "Berlin, Germany",
   },
   {
     url: "https://jsheroes.io",
@@ -553,11 +503,6 @@ const conferences: Cfp[] = [
     location: "Rovinj, Croatia",
   },
   {
-    url: "https://javazone.no",
-    month: "September",
-    location: "Oslo, Norway",
-  },
-  {
     url: "https://springio.net",
     month: "May",
     location: "Barcelona, Spain",
@@ -566,11 +511,6 @@ const conferences: Cfp[] = [
     url: "https://geecon.org",
     month: "May",
     location: "Krakow, Poland",
-  },
-  {
-    url: "https://reactadvanced.com",
-    month: "October",
-    location: "London, UK",
   },
   {
     url: "https://vueday.it",
@@ -596,16 +536,6 @@ const conferences: Cfp[] = [
     url: "https://ngrome.io",
     month: "June",
     location: "Rome, Italy",
-  },
-  {
-    url: "https://reactsummit.com",
-    month: "June",
-    location: "Amsterdam, Netherlands",
-  },
-  {
-    url: "https://reactsummit.us",
-    month: "November",
-    location: "New York, USA",
   },
   {
     url: "https://codegarden.umbraco.com",
@@ -641,21 +571,6 @@ const conferences: Cfp[] = [
     url: "https://www.reactrally.com",
     month: "August",
     location: "Utah, USA",
-  },
-  {
-    url: "https://reactlive.nl",
-    month: "September",
-    location: "Amsterdam, Netherlands",
-  },
-  {
-    url: "https://www.reactindia.io",
-    month: "September",
-    location: "Goa, India",
-  },
-  {
-    url: "https://reactnexus.com",
-    month: "July",
-    location: "Bangalore, India",
   },
   {
     url: "https://laracon.eu",
