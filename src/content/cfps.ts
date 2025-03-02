@@ -87,12 +87,12 @@ const conferences: Cfp[] = [
     location: "Cadiz, Spain",
   },
   {
-    url: "squiggleconf.com",
+    url: "https://squiggleconf.com",
     month: "October",
     location: "Boston, USA",
   },
   {
-    url: "es.pycon.org",
+    url: "https://es.pycon.org",
     month: "October",
     location: "Vigo, Spain",
   },
